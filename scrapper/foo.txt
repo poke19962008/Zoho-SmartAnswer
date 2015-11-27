@@ -1,0 +1,350 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Zoho Creator - Student Status</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="/appcreator/live/common/css/dialog.css" rel="stylesheet" type="text/css" /><link href="https://css.zohostatic.com/creator/ZOHOCREATOR_USER_RAMYA_BRANCH_REVIEWED_Nov_26_2015/css/l4t2c2.css" rel="stylesheet" type="text/css" />
+
+<link href='/appcreator/images/database_fav_small.ico' rel="SHORTCUT ICON">
+<!-- $Id$ -->
+<script>function getConfig()
+{
+var confprop={"cssStaticServer":'css.zohostatic.com',"jsStaticServer":'js.zohostatic.com',"domainVal":'zoho.com',"production":'true'};  
+return confprop;
+}
+var jsLocale = "en"; 
+var googledocurl = "https://gadgets.zoho.com/gdocs?maxDocs=1&serURL=https://creator.zoho.com/googledocresponse.jsp&bgcolor=EEF5E0&brcolor=BFD9A4&searchColor=8FA577&border=8FA577&hFontColor=FFFFFF"; 
+var zohodocurl = "https://docs.zoho.com/index.do?service=creator"; 
+var googlesheeturl = "https://gadgets.zoho.com/gdocs/sheets?maxDocs=1&serURL=https://creator.zoho.com/googledocresponse.jsp"; 
+var clouddocurl = "https://gadgets.zoho.com/CloudPicker?attachLimit=1&sources=gdrive,zohodocs,skydrive,dropbox,box&serURL=https://creator.zohopublic.com/gadgetsreponse.jsp"; 
+var fileCloudUrl = "https://gadgets.zoho.com/CloudPicker?ZC_PARAMS=&serURL=https://creator.zohopublic.com/gadgetsreponsefileupload.jsp"; </script>
+
+
+
+
+
+        <script type="text/javascript" src="https://js.zohostatic.com/creator/ZOHOCREATOR_USER_RAMYA_BRANCH_REVIEWED_Nov_26_2015//js//zcviewperma.js"></script>  
+	
+
+<link rel='stylesheet' type='text/css' href='/appcreator/live/common/css/jquery.handsontable.full.css' /><link rel='stylesheet' type='text/css' href='/appcreator/live/common/css/sheetview.css' />	
+
+<script>var i18n =
+{
+"duplinfomsg":"Duplicating Records",
+"bulkeditinfo":"Please select at least one record to be edited",
+"deleteinfomsg":"Deleting Records",
+"duplerrormsg":"Please select at least one record to be duplicated",
+"delerrormsg":"Please select at least one record to be deleted",
+"loadingmsg":"Loading", 
+"loadingform":"Loading Form", 
+"formulacalc":"Data in this form is being processed for Formula calculation.\nYou cannot add/modify/delete data in this form till the process is completed.\nPlease wait till it gets over",
+"showdetails":"Show Details",
+"hidedetails":"Hide Details",
+"failedreq":"Failed to process your request.\nKindly refresh the page and try again later.\nIf the problem persists, please notify to support@zohocreator.com",
+"errormsg":"Error occurred. Please refresh the page and try again later.",
+"apprating":"You have to be logged in to rate this application.",
+"appreview":"You have to be logged in to write a review for this application.",
+"reviewtitleandcontent":"Enter the title and content for your review.",
+"reviewtitle":"Enter the title for your review.",
+"reviewcontent":"Enter the content for your review.",
+"addreview":"Adding Review",
+"reviewadded":"Review added successfully",
+"loadingdot":"Loading...",
+"updratings":"Updating Ratings",
+"pastedata":"Please Paste your Data",
+"dataerror":"An Error occurred with adding the data",
+"submitform":"Submitting Form",
+"importing":"Importing Data",
+"pleasewait":"Please wait", 
+"viewsave":"View saved successfully. \nDo you want to navigate to the new view.",
+"custact":"Select at least one record(matching criteria) upon which the custom action has to be invoked.",
+"saving":"Saving",
+"saverec":"Saving Records",
+"successmsg":"Data Added Successfully!", 
+"delfailmsg":"Record(s) could not be deleted, since delete validate action failed.",
+"delsuccmsg":"Record(s) deleted successfully.",
+"custactfailmsg":"Execution failed for",
+"custactsuccmsg":"Successfully executed for",
+"funcsuccmsg":"Function executed successfully",
+"recsuccmsg":"record(s) updated successfully.",
+"recfailmsg":"record(s) could not be updated.",
+"deleterecord":"Do you really want to delete this record ?",
+"reallywantto":"Do you really want to [0] the selected [1] record(s)?",
+"reallywanttorecord":"Do you really want to [0] this record?",
+"delete1":"delete",
+"duplicate1":"duplicate",
+"ascending":"Asc",
+"descending":"Desc",
+"invalidmsg":"Invalid entries found. Please correct and submit again.", 
+"noMsg":"There is no such [0] in ZohoCreator.",
+"deleteMsg":"Do you really want to delete the selected record?", 
+"selectcolumn":"Select another column to edit",
+"recCount":"Record Count",
+"fetchCount":"Fetching Count",
+"bulkEditMsg":'This will update [0] selected record(s) with the given value.\nPress OK to proceed or press Cancel to return.',
+"showfield":"One or more fields were dynamically changed.<br>Please resubmit the form.",
+"onuserinputexecute":"On User Input action is being executed for one of the field in this form.<br>Please wait till it gets over and submit again.",
+"invalidsubmission":"Form submission failed.",
+"applystyleMsg":"Applying Styles",
+"iframeSnippet":"Get Iframe Snippet",
+"javascriptSnippet":"Get JavaScript Snippet",
+"selectOption":"Select",
+"disablePublic":"Enabling public access is not allowed for the Trial and Free edition users. <a href='/upgradeplan'>Upgrade</a> to use this feature.",
+"regensuccmsg1":"Scheduled for regenerating this report. This may take few minutes based on the view's data.",
+"regensuccmsg2":"Please refresh the view after sometime.",
+"regenfailmsg":"Sorry. We are unable to regenerate the report.",
+"deniedmsg1":"This report is currently disabled for this account.",
+"noComponent":"There is no form or view in this section. Please click on  someother Tab/Component...",
+"viewlogdetails":"View Log Details",
+"backtoform":"Back to Form",
+"viewerrordetails":"View Error Details",
+"nofldtomatch":"Please select the field(s) to match with existing record(s)",
+"plzpastedata":"Please provide input for file content",
+"importerror":"Error occurred while uploading the file. Kindly report this problem to support@zohocreator.com",
+"nofiletoimport":"Please select a file to upload or check if your uploaded file has data..",
+"emptyfiletoimport":"Please provide a file with data",
+"largefiletoimport":"Please provide a file of size less than 5MB",
+"uploadmore":"To upload more, contact support@zohocreator.com", 
+"importingmsg":"Importing Data ...", 
+"selcols4imp":"Please select columns to import", 
+"view":"View", 
+"form":"Form", 
+"report":"Report", 
+"page":"Page", 
+"component":"component", 
+"showimperrors":"Show Errors", 
+"hideimperrors":"Hide Errors", 
+"publicstatusmsg1":"Public Access Feature needs to be enabled in your account. [0]Your request for this feature is pending.", 
+"publicstatusmsg2":"Public Access Feature needs to be enabled in your account. [0]Click here[1] to request for this feature.", 
+"requestpublic":"Request for Public Access", 
+"publicaccessupgrade":"Upgrade to enable this option.", 
+"nomultiple":"You Are Not Allowed to Enter More Than One Record for This Form", 
+"headererrormsg":"Error", 
+"failedtoadd":"Failed to add data.",     
+"stylecustomization":"Style Customization", 
+"stylerestrict":"Style Customization is not available for Free Edition", 
+"getthisfeature":'Upgrade to get this feature in your account.', 
+"alreadyfileuploaded":"You have already uploaded a file.", 
+"paymentstatusmsg":"The payment process has finished with the status '[0]'.", 
+"paymentcancelled":"Payment has been cancelled...", 
+"viewinvalidmsg":"Invalid entries found. Please correct and save again.",
+"valueforn":"Enter the value for N",
+"correctvalueforn":"Please enter a valid number for N",
+"correctvaluetosearch":"Please enter a valid number to search",
+"entervaluetosearch":"Please enter a value to search records",
+"selectfieldtosearch":"Please select any field to search records",
+"correctvaluetodecisioncheckbox":"Please enter true or false to search with decision checkbox field ",
+"entervalidemail":"Please enter a valid email address.",
+"entervaliddateformat":"Please enter valid date format",
+"entervaliddatetimeformat":"Please enter valid date time format",
+"cannoraddsubformrowmsg":"You have reached maximum number of rows. You can not add further.",
+"duplicateheader":"Duplicate value",
+"duplicateerror":"Duplicate values found for 'null'",
+"zc.viewedit.advcritlink":"(Advanced)",
+"zc.viewedit.uicritlink":"(Back to Normal)",
+"zc.viewedit.setcritmsg":"By default your view will display all the records. You can restrict the display of records by setting criteria.",
+"zc.viewedit.setcritmsg1":"For eg: <strong>Name &raquo; Starts With &raquo; John</strong> to see records only related to <em>John</em>",
+"zc.viewedit.critmodealert1":"The Deluge criteria specified cannot be displayed in GUI mode.",
+"zc.viewedit.critmodealert2":"All the changes you made since the last save will be lost. Do you want to continue?",
+"zc.viewedit.multiselcrirepmsg1":"Please delete the above reports and try again.",   
+"zc.viewlive.1recordsel":"1 record selected",
+"alreadyselected":"This value has been selected already.",  
+"replacing":"Replacing...",
+"spreadsheetcnfm1":"Do you really want to leave this page? Unsaved changes will be lost.", 
+"unconfirmeduserpublish": "The email address of the application owner is not yet verified. Please verify the email address to publish this component." 
+};
+i18n['zc.viewlive.selectatleastone'] =  'You should select atleast one record to print the record summary.';
+i18n['zc.viewlive.selectatleastonefield'] =  'You should select atleast one field to apply.';
+i18n['zc.viewedit.setcritmsg2'] = 'For eg: Name == "John" to see records only related to <em>John</em>'; 
+i18n['zc.viewedit.multiselcrirepmsg'] = 'You are trying to set criteria involving "Multi-Select" field(s). This criteria cannot be applied to the following reports.'; 
+i18n['zc.viewedit.nameforview'] = 'Please specify a name for the View'; 
+i18n['zc.viewedit.shortnameforview'] = 'Please specify a View name which does not exceed 50 characters.'; 
+i18n['zc.viewedit.formforview'] = 'Please select a Form for this View'; 
+i18n['zc.viewedit.confirmdelete1msg'] = 'Do you really want to delete this view?'; 
+i18n['zc.viewedit.confirmdelete2msg'] = 'Press OK to delete or press Cancel to return.'; 
+i18n['zc.calendar.nextmonth'] = 'Next Month'; 
+i18n['zc.calendar.nextweek'] = 'Next Week'; 
+i18n['zc.calendar.nextday'] = 'Next Day'; 
+i18n['zc.calendar.previousmonth'] = 'Previous Month'; 
+i18n['zc.calendar.previousweek'] = 'Previous Week'; 
+i18n['zc.calendar.previousday'] = 'Previous Day';
+i18n['zc.viewlive.thanksfortryingui'] = 'Thank you for trying the new UI';
+i18n['zc.viewlive.download'] = 'Download'; 
+i18n['zc.formval.entervalidnumber'] = 'Enter a valid number for <strong> null </strong>';
+i18n['zc.uploadfile.invalidname'] = 'Invalid file name';
+var documentdomain="creator.zohopublic.com"; </script>
+<script>$(window).scroll(function(){ZCApp.scroll();});
+$(window).resize(function(){ZCApp.resize();});
+$(document).ready(function()
+{
+ZCView.addToViewArr("{isViewBeta=false, zc_Analytics_Id=}", "", "", "<cu:encode object=''  contexts='javascript'/>");
+ZCApp.setGlobals("49910842", "srm_university", "attendance-2015-16", "2727643000004691649", "-100", "49912430", "4", "", "");
+ZCApp.setCSRFParams("zccpn", "103ed4ed-2274-4b63-a836-a79caad500b2");
+ZCApp.regGlobalEvents();
+});</script></head><body class="body-class" onclick="ZCApp.hideViewPermaContent(event);" >
+
+
+
+<div id="zc-component"><table id="zc-pane" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+
+<td id="zc-pane-right" class="zc-perma-pane-right"> 
+
+
+<div elName="zc-component-Student_Status" comElName="zc-component">
+
+
+
+
+
+
+
+<!-- $Id$ -->
+
+
+
+
+
+
+<script>
+	document.domain="creator.zohopublic.com";  
+</script>
+
+
+
+	<!-- $Id$ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" elName ="zc-maincontent" height="100%" cellpadding="0" cellspacing="0" border="0" style="white-space: normal;">
+	<tr>
+		<td valign="top" id="zc-viewcontainer_Student_Status">
+		
+			<style>
+  .mainDiv
+  {
+	  background-image:url('http://www.srmuniv.ac.in/sites/default/files/images/srm_logo.gif'); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+  width:900px;
+  height:auto;
+  box-shadow:0px 0px 10px #0066FF;
+  border:1px solid #0033CC;
+ // background:white ;
+  margin:10 auto;
+  padding:10px;
+  }
+  .LogoDiv
+  {
+     background-image:url('http://www.srmuniv.ac.in/images_home/srm-logo.png'); 
+	 background-repeat: no-repeat; 
+	 background-color: contain; 
+	 height:80px;
+  width: 900px;
+  }
+   .small {
+    line-height: 60%;
+  }
+  </style>	
+  <div class="mainDiv">
+      <div class="LogoDiv" align="center">
+			<h3 align="center">FACULTY OF ENGINEERING AND TECHNOLOGY</h3>
+	  <p class="small" align=center>SRM University, Kattankulathur</p>
+	  <p class="small" align=center>(ACADEMIC YEAR 2015 - 2016)</p></div>
+    <br/><br/>
+    <table border="0" align="center" cellpadding="1" cellspacing="1">
+              <tr><td><strong><font size=2>Registration Number</font></strong></td><td width='20px'><font size=2>:</font></td><td><font size=2>RA1411003010001</font></td><td><strong><font size=2>Name of the Student</font></strong></td><td width='20px'><font size=2>:</font></td><td><font size=2>FENIL RAKESH DOSHI</font></td></tr><tr><td><strong><font size=2>Program/Dept</font></strong></td><td width='20px'><font size=2>:</font></td><td><font size=2>B.Tech</font> <font size=2>Computer Science and Engineering</font></td><td><strong><font size=2>Semester</font></strong></td><td width='20px'><font size=2>:</font></td><td><font size=2>3</font></td></tr>
+    </table>
+	
+	<br>
+    <table border="1" align="center" cellpadding="1" cellspacing="1">
+      <thead>
+  	    <tr align="center" bgcolor="gainsboro">
+		  <!--<td><strong><font size=2>Slot</font></strong></td>--><td><strong><font size=2>Course Code</font></strong></td>
+	      <td><strong><font size=2>Course Title</font></strong></td>
+	      <td><strong><font size=2>Faculty Name</font></strong></td>
+			<td><strong><font size=2>CT1</font></strong></td>
+		  <td><strong><font size=2>CT2</font></strong></td>
+		  <td><strong><font size=2>QAT</font></strong></td>
+		  <td><strong><font size=2>ST</font></strong></td>
+		  <td><strong><font size=2>MT</font></strong></td>
+		  <td><strong><font size=2>PT</font></strong></td>
+	      <td><strong><font size=2>Attendance<br/>(%)</font></strong></td>
+		<td><strong><font size=2>Internal<br/></font></strong></td></tr>
+      	    <tr><td><font size=2>MA1003</font></td><td><font size=2>TRANSFORMS AND BOUNDARY VALUE PROBLEMS</font></td><td><font size=2>DR.S.TAMILVANAN</font></td><td><font size=2>8.4</font></td><td><font size=2>8.4</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>6.4</font></td><td>-</td><td><strong><font size=2 color=green>93.65%</font></strong></td><td><font size=2>32.2</font></td></tr><tr><td><font size=2>EE1053</font></td><td><font size=2>ELECTRIC CIRCUITS</font></td><td><font size=2>Mr.A.DOMINIC SAVIO</font></td><td><font size=2>6.8</font></td><td><font size=2>7.4</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>13.0</font></td><td>-</td><td><strong><font size=2 color=green>79.25%</font></strong></td><td><font size=2>33.2</font></td></tr><tr><td><font size=2>LE1005</font></td><td><font size=2>JAPANESE LANGUAGE - PHASE - I</font></td><td><font size=2>Ms.R.PADMAJA</font></td><td><font size=2>8.4</font></td><td><font size=2>5.4</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>12.2</font></td><td>-</td><td><strong><font size=2 color=green>81.82%</font></strong></td><td><font size=2>33.0</font></td></tr><tr><td><font size=2>PD1003</font></td><td><font size=2>APTITUDE - I</font></td><td><font size=2>HARI NATH</font></td><td><font size=2>6.0</font></td><td><font size=2>8.3</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>19.6</font></td><td>-</td><td><strong><font size=2 color=green>93.75%</font></strong></td><td><font size=2>42.9</font></td></tr><tr><td><font size=2>CS1003</font></td><td><font size=2>DIGITAL COMPUTER FUNDAMENTALS</font></td><td><font size=2>Ms.SOPNA EDWIN</font></td><td><font size=2>8.2</font></td><td><font size=2>9.0</font></td><td>-</td><td><font size=2>3.0</font></td><td><font size=2>9.1</font></td><td>-</td><td><strong><font size=2 color=green>86.0%</font></strong></td><td><font size=2>32.3</font></td></tr><tr><td><font size=2>CS1005</font></td><td><font size=2>OBJECT ORIENTED PROGRAMMING</font></td><td><font size=2>Ms.G.VIJAYALAKSHMI</font></td><td><font size=2>10.0</font></td><td><font size=2>10.0</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>17.8</font></td><td>-</td><td><strong><font size=2 color=green>92.0%</font></strong></td><td><font size=2>46.8</font></td></tr><tr><td><font size=2>CS1007</font></td><td><font size=2>MICROPROCESSOR AND INTERFACING</font></td><td><font size=2>Ms.A.L.AMUTHA</font></td><td><font size=2>8.0</font></td><td><font size=2>6.4</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>5.2</font></td><td>-</td><td><strong><font size=2 color=green>83.67%</font></strong></td><td><font size=2>26.6</font></td></tr><tr><td><font size=2>CS1009</font></td><td><font size=2>OBJECT ORIENTED ANALYSIS AND DESIGN</font></td><td><font size=2>Mr.M.SENTHIL RAJA</font></td><td><font size=2>5.2</font></td><td><font size=2>7.6</font></td><td>-</td><td><font size=2>5.0</font></td><td><font size=2>13.0</font></td><td>-</td><td><strong><font size=2 color=green>82.69%</font></strong></td><td><font size=2>32.8</font></td></tr><tr><td><font size=2>CS1031</font></td><td><font size=2>OBJECT ORIENTED PROGRAMMING LABORATORY</font></td><td><font size=2>Ms.G.VIJAYALAKSHMI</font></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td><font size=2>55.0</font></td><td><strong><font size=2 color=green>94.12%</font></strong></td><td><font size=2>59.0</font></td></tr><tr><td><font size=2>CS1033</font></td><td><font size=2>MICROPROCESSOR AND INTERFACING LABORATORY</font></td><td><font size=2>Ms.S.S.SARANYA</font></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td><font size=2>45.83</font></td><td><strong><font size=2 color=green>80.0%</font></strong></td><td><font size=2>46.83</font></td></tr>
+    
+	  </thead> 
+    </table>
+	<br/>
+		  <table  width=800px;"border="0"cellspacing="1"cellpadding="1">
+		  
+		  <tr>
+		  <td></td>
+		  <td></td>
+		  </tr>
+		  <tr>
+  <td align="center"><strong>Ms.K.SATHIYAPRIYA<br/>Faculty Advisor</strong></td>
+  <td align="center"><strong>Dean / HOD</strong></td>
+  </tr>
+		  </table><br>    </div>  
+				
+						<script>
+						function doaction(recType) 
+ {
+
+}  
+						$(document).ready(function()
+						{
+						doaction();
+						});
+						</script>
+						
+             <div elName="zc-linkinfo-div"  exportServerPrefix="creatorexport.zoho.com" scheme="https" serverprefix="https://creator.zohopublic.com" critStr="" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+<script>$(document).ready(function()
+{
+ZCApp.currZCComp = "Student_Status";
+ZCApp.loadZCCompsInHTML();
+});</script>
+
+</div><div id="zc-loading" class="zc-loading" msg="Loading"><table cellpadding="0" cellspacing="0" border="0"><tr><td class="zc-loading-td"><img src="/appcreator/live/common/images/loading.gif"/></td><td class="zc-loading-td-text" loading="true"></td></tr></table></div><div id="zc-fadding" class="zc-loading" msg="Loading"><table cellpadding="0" cellspacing="0" border="0"><tr><td class="zc-loading-td-text  zc-loading-td-text-align" loading="true"></td></tr></table></div></td></tr></table></div> 
+		
+
+
+</body></html>
