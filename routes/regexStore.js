@@ -31,6 +31,7 @@ var query = {
     scoreInOneSubject: {
       queries: [/(how much i )?(scored?|marks?|got) (in )?((((cs)|(ma)|(le)|(pd))10[0-9]{2})|(math|maths)|((electrical)|(electric)|(ee)|(eee))|(aptitude|apttitude)|(dcf|d\.c\.f|d\.c\.f\.)|(oops|oop|o\.o\.p\.s|o\.o\.p\.s\.|o\.o\.p|o\.o\.p\.)|(ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d)|((oops|oop|o\.o\.p\.s|o\.o\.p\.s\.|o\.o\.p|o\.o\.p\.) (lab|laboratory))|((micro|microprocessor) (lab|laboratory)))/g],
 
+      answer: answers.scoreInOneSubject,
     },
   },
 

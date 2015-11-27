@@ -1,7 +1,7 @@
 function config(){
   var conf = {
     "mongo": {
-      "uri": "mongodb://127.0.0.1:27017/zoho",
+      "uri": "mongodb://localhost:27017/zoho",
       "port": 271017
     },
 
