@@ -1,6 +1,7 @@
 var express = require('express');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
+var mongoStore = require('connect-mongo')(session);
 var config = require('./config').load();
 
 var app_3000 = express()
@@ -16,6 +17,12 @@ app_3000.use(session({
     expires: new Date(Date.now() + config.session.expiration),
     maxAge: config.session.expiration,
   },
+
+  store: new mongoStore({     // Mongo Store configs
+    url: config.mongo.uri,
+    autoRemove: 'native', // Remove all the expired sessions
+    collection: 'session', // COllection name
+  }),
 }));
 
 app_3000.use(express.static(__dirname + "/public"));

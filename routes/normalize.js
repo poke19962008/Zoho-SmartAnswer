@@ -5,6 +5,7 @@ function init(query){
   var data = {
     subject: [],
     regID: [],
+    bools: {},
   };
 
 
@@ -23,8 +24,8 @@ function init(query){
   for(var key in bools){
     var patt = new RegExp(bools[key]);
 
-    if(patt.test(query)) data[key] = true;
-    else data[key] = false;
+    if(patt.test(query)) data.bools[key] = true;
+    else data.bools[key] = false;
   }
 
   return data;
