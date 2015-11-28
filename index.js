@@ -14,9 +14,11 @@ app.get('/', function (req, res){
   norm.regID.push(req.session.usrID);
   console.log(norm);
   for(var key in norm.bools){
+    if(found) break;
 
     if(norm.bools[key] && !found){
       for(var queryType in reStore.query[key]){
+        if(found) break;
         var reQueries = reStore.query[key][queryType];
 
         for(var ind in reQueries.queries){
@@ -33,7 +35,6 @@ app.get('/', function (req, res){
         }
       }
     }
-    if(found) break;
   }
 
   if(!found)

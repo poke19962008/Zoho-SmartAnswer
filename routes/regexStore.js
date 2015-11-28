@@ -29,7 +29,7 @@ var bools = {
 var query = {
   marks:{
     scoreInOneSubject: {
-      queries: [/(how much i )?(scored?|marks?|got)( in )?((((cs)|(ma)|(le)|(pd))10[0-9]{2})|(math|maths)|((electrical)|(electric)|(ee)|(eee))|(aptitude|apttitude)|(dcf|d\.c\.f|d\.c\.f\.)|(oops?|o\.o\.p(\.s)?(\.)?)|(ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d)|((oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory))|((micro|microprocessor) (lab|laboratory)))(?![a-z]?(,|and))/g],
+      queries: [/(how much i )?(scored?|marks?|got)( in )?((((cs)|(ma)|(le)|(pd))10[0-9]{2})|(math|maths)|((electrical)|(electric)|(ee)|(eee))|(aptitude|apttitude)|(dcf|d\.c\.f|d\.c\.f\.)|(oops?|o\.o\.p(\.s)?(\.)?)|(ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d)|((oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory))|((micro|microprocessor) (lab|laboratory)))(?![a-z]?(,| and))/g],
 
       answer: answers.scoreInOneSubject,
     },
