@@ -1,0 +1,35 @@
+body {
+
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fd746c , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fd746c , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-family: "Lato", latin;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: normal;
+}
+
+footer {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#search {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+#card {
+  margin-top: 20px;
+}
