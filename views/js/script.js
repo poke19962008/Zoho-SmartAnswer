@@ -7,4 +7,6 @@ $(document).ready(function (){
     var ind = Math.floor((Math.random() * (alertMsg.length-1)) );
     notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 3);
   }, 5000);
+
+  $("#title, #search, footer").addClass('animated bounceInUp');
 });

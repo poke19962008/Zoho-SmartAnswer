@@ -9,24 +9,59 @@
     <link rel="stylesheet" href="css/bootstrap.css" >
     <link rel="stylesheet" href="css/animate.css" >
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/card.css" >
   </head>
   <body>
-    <center><h1>Smart Internal Checker</h1></center>
+    <center><h1 id="title">Smart Internal Checker</h1></center>
 
     <div class="container">
-      <center>
-        <input id="search" type="text" name="name" value="" placeholder="Search me..." class="form-control col-lg-6 col-md-12 col-sm-12">
-      </center>
 
-      <div class="" id="card">
+      <div id="search-div">
         <center>
-          <img src="img/loading-bars.svg" alt="Loading icon" />
+          <input id="search" type="text" name="name" value="" placeholder="Search me..." class="form-control col-lg-6 col-md-12 col-sm-12">
         </center>
       </div>
 
-      <div class="" id="tips">
+      <div id="card-div">
+        <center>
 
+          <!-- <img src="img/loading-bars.svg" alt="Loading icon" /> -->
+
+          <!-- Ajax Card insertion goes here -->
+          <div class="card-section" id="info-card">
+            <!-- Card Message -->
+            <div class="" id="card-msg">
+              hello world
+            </div>
+
+            <!-- Card Tables -->
+            <div class="" id="card-tables">
+              <table class="table table-hover table-bordered">
+
+                <thead>
+                  <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>1 data</th>
+                    <th>2 data</th>
+                    <th>3 data</th>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+
+        </center>
       </div>
+
     </div>
 
     <footer>

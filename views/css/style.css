@@ -24,12 +24,17 @@ footer {
   margin-top: 20px;
 }
 
-#search {
+#search-div {
   margin-top: 40px;
   margin-bottom: 20px;
   height: 50px;
 }
 
-#card {
-  margin-top: 20px;
+#search {
+  height: 50px;
+}
+
+#card-div {
+  margin-top: 40px;
+  margin-bottom: auto;
 }
