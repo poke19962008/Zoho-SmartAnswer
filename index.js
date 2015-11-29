@@ -4,7 +4,7 @@ var normalize = require('./routes/normalize').normalize;
 
 
 
-app.get('/', function (req, res){
+app.get('/query', function (req, res){
   var query = req.query.q;
   var found = false;
 
@@ -47,8 +47,10 @@ app.get('/login', function(req, res){
   res.send("Login Successfull");
 });
 
-app.get('/test', function(req, res){
-  res.send(req.session['usrID']);
+app.get('/getQueryList', function (req, res){
+  var q = [
+    'How much I scored in oops, micro and ooad', 'How much I scored in dcf',
+  ];
 
-  console.log(req.session);
+  res.send(q);
 });
