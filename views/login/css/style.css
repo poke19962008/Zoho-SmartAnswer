@@ -1,0 +1,20 @@
+body {
+
+  background: #fd746c;
+  background: -webkit-linear-gradient(to left, #fd746c , #ff9068);
+  background: linear-gradient(to left, #fd746c , #ff9068);
+
+  color: white;
+  font-family: "Lato", latin;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: normal;
+}
+
+footer {
+  font-size: 18px;
+  font-weight: lighter;
+}
