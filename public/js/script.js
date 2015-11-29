@@ -23,11 +23,23 @@ $(document).ready(function (){
 
     setInterval(function(){
       var ind = Math.floor((Math.random() * (alertMsg.length-1)) );
-      notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 3);
+      notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 6);
     }, 6000);
 
     $("#title, #search, footer").addClass('animated bounceInUp');
   });
+});
 
-
+$("#search").keyup(function (e){
+  if(e.keyCode == "13"){
+    $.ajax({
+      url: nodeHost + "/query",
+      data: { q: $('#search').val() },
+      dataType: 'html',
+      cache: false,
+    })
+    .done(function (msg){
+      $("#card-div").html(msg);
+    });
+  }
 });

@@ -1,0 +1,22 @@
+div.card-section(id="info-card")
+	div#card-msg
+		= msg
+  
+- each val, subCode in JSON
+	div.card-section(id="info-card")
+		div#card-msg
+			= subCode
+		
+		div#card-tables
+			table(class=["table", "table-hover", "table-borded"])
+				thead
+					tr
+						- each value, key in JSON[subCode]
+							th
+								= key
+				tbody
+					tr
+						- each value, key in JSON[subCode]
+							th
+								= value
+		

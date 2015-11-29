@@ -27,7 +27,7 @@ app.get('/query', function (req, res){
 
           if(new RegExp(re).test(query)){
             reQueries.answer(norm, function result(err, doc){
-              res.send(doc);
+              res.render(doc.template, doc);
             });
             found = true;
             break;
@@ -44,7 +44,7 @@ app.get('/query', function (req, res){
 });
 
 app.get('/createSession', function(req, res){
-  var reID = new RegExp("(ra)(1411003010)[0-7][0-9]{2}$");
+  var reID = new RegExp("((ra)|(RA))(1411003010)[0-7][0-9]{2}$");
   var ID = req.query.id;
 
   if(reID.test(ID)){

@@ -24,16 +24,18 @@ exports.init = {
       });
 
       cur.toArray(function (err, doc){
-        var res = {};
+        var res = {
+          JSON: {}
+        };
 
-        res.JSON = doc[0].course[data.subject[0]];
-        res.template = "xyz.jade";
+        res.JSON[data.subject[0]] = doc[0].course[data.subject[0]];
 
         if((data.subject[0] == "CS1033")||(data.subject[0] == "CS1031"))
-          res.msg = "You have scored " + res.JSON.internal + " out of 60 in your internal.";
+          res.msg = "You have scored " + res.JSON[data.subject[0]].internal + " out of 60 in your internal.";
         else
-          res.msg = "You have scored " + res.JSON.internal + " out of 50 in your internal.";
+          res.msg = "You have scored " + res.JSON[data.subject[0]].internal + " out of 50 in your internal.";
 
+        res.template = "card.jade";
         result(err, res);
       });
     });
@@ -66,7 +68,7 @@ exports.init = {
             else
               res.msg += res.JSON[data.subject[i]].internal + " out of 50 in your "+data.subject[i]+"("+invMapSub[data.subject[i]]+") internal, ";
           }
-          res.template = "xyz.jade";
+          res.template = "card.jade";
           result(err, res);
         });
       });
