@@ -1,20 +1,27 @@
 var nodeHost = "http://localhost:3000";
 
 $(document).ready(function (){
+});
 
+$("#login-btn").click(function (){
   $.ajax({
-    url: nodeHost + "/getQueryList",
-    dataType: "json",
+    url: nodeHost + "/createSession",
+    data: { id: $("#login-inp").val() },
+    dataType: 'json',
     cache: false,
   })
-  .done(function (alertMsg){
+  .done(function (msg){
+    if(msg.status == "success"){
+      document.location = nodeHost + "/";
+      document.cookie = "isLoggedIn=true; expires="+new Date(Date.now() + 360000000)+"; path=/;";
+    }
+    else if(msg.status == "not Valid")
+      notie.alert(3, "Enter valid ID.", 2);
+    else
+      notie.alert(3, "Something Went Wrong :(", 2);
 
-    setInterval(function(){
-      var ind = Math.floor((Math.random() * (alertMsg.length-1)) );
-      notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 3);
-    }, 5000);
-
-    $("#title, #search, footer").addClass('animated bounceInUp');
+  })
+  .error(function (){
+    notie.alert(3 ,"Connected to Internet?? O_o" , 2);
   });
-
 });

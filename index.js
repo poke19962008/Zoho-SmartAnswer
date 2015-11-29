@@ -13,6 +13,7 @@ app.get('/query', function (req, res){
     res.redirect('/login');
   norm.regID.push(req.session.usrID);
   console.log(norm);
+
   for(var key in norm.bools){
     if(found) break;
 
@@ -42,9 +43,16 @@ app.get('/query', function (req, res){
 
 });
 
-app.get('/login', function(req, res){
-  req.session.usrID = "ra1411003010485";
-  res.send("Login Successfull");
+app.get('/createSession', function(req, res){
+  var reID = new RegExp("(ra)(1411003010)[0-7][0-9]{2}$");
+  var ID = req.query.id;
+
+  if(reID.test(ID)){
+    req.session.usrID = ID;
+    res.send({ status: "success" });
+  }
+  else
+    res.send({ status: "not Valid" });
 });
 
 app.get('/getQueryList', function (req, res){
