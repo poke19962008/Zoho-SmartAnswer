@@ -46,7 +46,7 @@ var query = {
 
     failedSubjects: {
       queries: [
-        "(in (what|which) )?(subjects?|courses?|subs?) ((i (have)?)|(i))? ((failed(ed)?)|(drop(p?ed)?))"
+        "((in)? (what|which|(how many)) )?(subjects?|courses?|subs?) ((i (have)?)|(i))? ((failed(ed)?)|(drop(p?ed)?))( ?\?)?$"
       ],
 
       answer: answers.failedSubjects,
