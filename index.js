@@ -8,7 +8,9 @@ app.get('/query', function (req, res){
   var query = req.query.q;
   var found = false;
 
+  query = query.replace(/(\s){2,}|(\n)+|(\r)+|(\t)+/g, " ");
   var norm = normalize(query);
+
   if(req.session.usrID == undefined)
     res.redirect('/login');
   norm.regID.push(req.session.usrID);

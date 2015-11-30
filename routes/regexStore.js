@@ -21,26 +21,36 @@ var synonym = {
 
 };
 
+var subjectRe = "(math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)";
+
 var bools = {
   attendance: /attendance/g,
-  marks: /marks|scored?/g,
+  marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?))/g,
 };
 
 var query = {
   marks:{
     scoreInOneSubject: {
-      queries: [/(how much i )?(scored?|marks?|got)( in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033))( ?\?)?$/g],
+      queries: ["((how much i )|(what('?s) my ))?(scored?|marks?|got)( in )?("+subjectRe+")( ?\?)?$"],
 
       answer: answers.scoreInOneSubject,
     },
 
     scoreInMultipleSubject:{
       queries: [
-        /(how much i )?(scored?|marks?|got)( in)? (((((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033))( ?,? ?)){2,}( ?(and|&) ((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)))?))|(((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)) (and|&) ((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)))/g
+        "((how much i )|(what('?s) my ))?(scored?|marks?|got)( in)? (((("+subjectRe+")( ?,? ?)){2,}( ?(and|&) ("+subjectRe+"))?))|(("+subjectRe+") (and|&) ("+subjectRe+"))"
       ],
 
       answer: answers.scoreInMultipleSubject,
     },
+
+    failedSubjects: {
+      queries: [
+        "(in (what|which))? (subjects?|courses?) (i (have)?)? ((failed(ed)?)|(drop(p?ed)?))( ?\??)"
+      ],
+
+      answer: answers.failedSubjects,
+    }
   },
 
 };

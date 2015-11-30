@@ -8,11 +8,11 @@ mongoURI = "mongodb://127.0.0.1:27017/zoho"
 url = root + str(studentID)
 
 connected = False
-try: 
+try:
 	con = pymongo.Connection(host=mongoURI, port=27017)
 	db = con['zoho']
 	connected = True
-except: 
+except:
 	print "[Error] Cannot connect with mongodb."
 errorLogger = open('errLog.txt', 'a')
 
@@ -34,7 +34,7 @@ while True and connected:
 				key = keyDict[td.get_text()]
 			elif indexer == 3:
 				val = td.get_text()
-			
+
 			indexer = indexer + 1
 
 		if student['dept'] != "B.Tech Computer Science and Engineering":
@@ -42,25 +42,29 @@ while True and connected:
 
 		indexer = 1
 		student['course'] = {}
-		tableCol = {2: "tile", 3: "faculty", 4: "ct1", 5: "ct2", 6: "qat", 7: "st", 8: "mt", 9: "pt", 10: "attendance", 11: "internal"}
+		tableCol = {2: "title", 3: "faculty", 4: "ct1", 5: "ct2", 6: "qat", 7: "st", 8: "mt", 9: "pt", 10: "attendance", 11: "internal"}
 		for td in table[0].find_all('td')[25:-5]:
 			if indexer % 12 == 0:
 				indexer = 1
 
 			if indexer == 1:
 				sCode = td.get_text()
+				if sCode == '':
+					continue
 				student['course'][sCode] = {}
 			elif td.get_text() != "":
-				student['course'][sCode][tableCol[indexer]] = td.get_text()
-
+				if (td.get_text() == '-') or (indexer == 2) or (indexer == 3):
+					student['course'][sCode][tableCol[indexer]] = td.get_text()
+				elif indexer == 10:
+					student['course'][sCode][tableCol[indexer]] = float(td.get_text()[:-1])
+				else:
+					student['course'][sCode][tableCol[indexer]] = float(td.get_text())
 			indexer = indexer + 1
 		print "[Success] Scrapped " + student["name"] + " studentID= " + str(studentID)
 
 		db.main.insert(student)
-	except: 
+	except:
 		print "[Error] Cannot scrap studentID: " + str(studentID)
 		errorLogger.write("{\"studentID\": "+ str(studentID) +"}\n")
-
+		
 	studentID = studentID + 4
-
-

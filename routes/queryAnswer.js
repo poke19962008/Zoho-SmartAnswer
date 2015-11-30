@@ -45,7 +45,10 @@ exports.init = {
     console.log("Query type: scoreInMultipleSubject");
 
     if(data.subject.length < 2 && data.regID.length == 0)
-      result("", "Invalid Query");
+      result("", {
+        msg: "Sorry Unable to Process your Query :(",
+        template: "invalidCard.jade",
+      });
     else{
       mongoClient.connect(uri, function (err, db){
         var cur = db.collection('main').find({
@@ -64,15 +67,25 @@ exports.init = {
             res.JSON[data.subject[i]] = doc[0].course[data.subject[i]];
 
             if((data.subject[i] == "CS1033")||(data.subject[i] == "CS1031"))
-              res.msg +=  res.JSON[data.subject[i]].internal + " out of 60 in your "+data.subject[i]+"("+invMapSub[data.subject[i]]+") internal, ";
+              res.msg +=  res.JSON[data.subject[i]].internal + " out of 60 in "+data.subject[i]+"("+invMapSub[data.subject[i]]+") internal, ";
             else
-              res.msg += res.JSON[data.subject[i]].internal + " out of 50 in your "+data.subject[i]+"("+invMapSub[data.subject[i]]+") internal, ";
+              res.msg += res.JSON[data.subject[i]].internal + " out of 50 in "+data.subject[i]+"("+invMapSub[data.subject[i]]+") internal, ";
           }
           res.template = "card.jade";
           result(err, res);
         });
       });
     }
+  },
+
+  failedSubjects: function (data, result){
+    console.log("Query type: failedSubjects");
+
+    // var cur = db.collection('main').find({
+    //   "_id": {$regex: data.regID[0], $options: 'i'},
+    // },{
+    //   "course."
+    // });
 
   },
 
