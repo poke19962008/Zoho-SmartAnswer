@@ -2,15 +2,15 @@ var mongoClient = require('mongodb').MongoClient;
 var uri = require('../config').load().mongo.uri;
 
 var invMapSub = {
-  MA1003 : "math",
-  EE1053: "electrical",
-  PD1003: "aptitude",
-  CS1003: "digital computer fundamentals",
-  CS1005: "object oriented programming",
-  CS1007: "microprocessor and interfacing",
-  CS1009: "object oriented analysis and design",
-  CS1031: "object oriented programming",
-  CS1033: "microprocessor and interfacing",
+  MA1003 : "Math",
+  EE1053: "Electrical",
+  PD1003: "Aptitude",
+  CS1003: "Digital Computer Fundamentals",
+  CS1005: "Object Oriented Programming",
+  CS1007: "Microprocessor and Interfacing",
+  CS1009: "Object Oriented Analysis and Design",
+  CS1031: "Object Oriented Programming",
+  CS1033: "Microprocessor and Interfacing",
 };
 
 exports.init = {
@@ -81,12 +81,34 @@ exports.init = {
   failedSubjects: function (data, result){
     console.log("Query type: failedSubjects");
 
-    // var cur = db.collection('main').find({
-    //   "_id": {$regex: data.regID[0], $options: 'i'},
-    // },{
-    //   "course."
-    // });
+    mongoClient.connect(uri, function(err, db){
+      var cur = db.collection('main').find({
+        "_id": {$regex: data.regID[0], $options: 'i'},
+      },{
+        "_id": false,
+        "course": true,
+      });
 
+      cur.toArray(function (err, doc){
+        var res = {
+          msg: "You need ",
+          JSON: {},
+        };
+
+        for(var subCode in doc[0].course){
+          var internal = doc[0].course[subCode].internal;
+
+          if(internal < 25){
+            res.JSON[subCode] = doc[0].course[subCode];
+            res.msg += (50-internal)*2 + " in " + invMapSub[subCode] + "("+ subCode + "), "
+          }
+        }
+
+        res.template = "card.jade";
+        result(err, res);
+      });
+
+    });
   },
 
 };

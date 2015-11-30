@@ -41,7 +41,10 @@ app.get('/query', function (req, res){
   }
 
   if(!found)
-    res.send("Invalid Query");
+    res.render('invalidCard.jade', {
+      msg: "Sorry Unable to Process your Query :(",
+      template: "invalidCard.jade",
+    });
 
 });
 
@@ -64,3 +67,17 @@ app.get('/getQueryList', function (req, res){
 
   res.send(q);
 });
+
+app.get('/test', function (req, res) {
+  var query = req.query.q;
+
+  var norm = normalize(query);
+  if(req.session.usrID == undefined)
+    res.redirect('/login');
+  norm.regID.push(req.session.usrID);
+  console.log(norm);
+  
+  reStore.query.marks.failedSubjects.answer(norm, function result(err, doc){
+    res.send(doc);
+  });
+})
