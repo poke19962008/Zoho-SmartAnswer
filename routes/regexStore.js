@@ -59,6 +59,14 @@ var query = {
 
       answer: answers.overallPassInOneSubject,
     },
+
+    overallFailInOneSubject: {
+      queries: [
+        "((how many )|overall |all ?)?( the ?)?students? fail(ed)? (in )?("+subjectRe+")"
+      ],
+
+      answer: answers.overallFailInOneSubject,
+    },
   },
 
 };
