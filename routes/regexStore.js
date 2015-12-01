@@ -50,7 +50,15 @@ var query = {
       ],
 
       answer: answers.failedSubjects,
-    }
+    },
+
+    overallPassInOneSubject: {
+      queries: [
+        "((how many )|overall |all ?)?( the ?)?students? pass(ed)? (in )?("+subjectRe+")"
+      ],
+
+      answer: answers.overallPassInOneSubject,
+    },
   },
 
 };

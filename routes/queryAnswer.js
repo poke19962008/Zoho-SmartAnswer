@@ -111,4 +111,63 @@ exports.init = {
     });
   },
 
+  overallPassInOneSubject: function (data, result){
+    mongoClient.connect(uri, function (err, db){
+      var res = {
+        JSON: {},
+        msg: "",
+      };
+      res.JSON[data.subject[0]] = {};
+
+      if((data.subject[0] == "CS1033")||(data.subject[0] == "CS1031")){
+        var find = {};
+        find["course." + data.subject[0] + ".internal"] = {$gt: 30};
+        db.collection('main').find(find).count(function(err, count){
+          res.JSON[data.subject[0]].internal = {};
+          res.JSON[data.subject[0]].internal = ((count/731)*100).toPrecision(4)+"\%";
+
+          res.msg = ((count/731)*100).toPrecision() + "\% students passed in "+ invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students passed: "
+
+          var find = {};
+          find["course." + data.subject[0] + ".pt"] = {$gt: 25};
+          db.collection('main').find(find).count(function(err, count){
+            res.JSON[data.subject[0]].practical = {};
+            res.JSON[data.subject[0]].practical = ((count/731)*100).toPrecision(4) + "\%";
+
+            result(err, res);
+          });
+        });
+
+      }else{
+
+        var find = {};
+        find["course." + data.subject[0] + ".internal"] = {$gt: 25};
+        db.collection('main').find(find).count(function (err, count){
+          res.JSON[data.subject[0]].internal = {};
+          res.JSON[data.subject[0]].internal = ((count/731)*100).toPrecision(4) + "\%";
+
+          res.msg = ((count/731)*100).toPrecision(4)+"\% students passed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students passed: ";
+
+          var find = {};
+          find["course." + data.subject[0] + ".ct1"] = {$gt: 5};
+          db.collection('main').find(find).count(function(err, count){
+            res.JSON[data.subject[0]].ct1 = {};
+            res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
+
+            var find = {};
+            find["course." + data.subject[0] + ".ct1"] = {$gt: 5};
+            db.collection('main').find(find).count(function (err, count){
+              res.JSON[data.subject[0]].ct2 = {};
+              res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
+
+              res.template = "card.jade";
+              result(err, res);
+            });
+          });
+        });
+
+      }
+    });
+  },
+
 };

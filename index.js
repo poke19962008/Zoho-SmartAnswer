@@ -62,13 +62,13 @@ app.get('/createSession', function(req, res){
 
 app.get('/getQueryList', function (req, res){
   var q = [
-    'How much I scored in oops, micro and ooad', 'How much I scored in dcf',
+    'How much I scored in oops, micro and ooad', 'How much I scored in dcf', 'How many subjects i failed', 'How many students passed in maths'
   ];
 
   res.send(q);
 });
 
-app.get('/test', function (req, res) {
+app.get('/testQuery', function (req, res) {
   var query = req.query.q;
 
   var norm = normalize(query);
@@ -76,8 +76,15 @@ app.get('/test', function (req, res) {
     res.redirect('/login');
   norm.regID.push(req.session.usrID);
   console.log(norm);
-  
+
   reStore.query.marks.failedSubjects.answer(norm, function result(err, doc){
     res.send(doc);
   });
-})
+});
+
+app.get('/testAnswer', function(req, res){
+  var ans = require('./routes/queryAnswer').init;
+  ans.overallPassInOneSubject({subject: ['CS1033']}, function result(err, doc){
+    res.send(doc);
+  });
+});
