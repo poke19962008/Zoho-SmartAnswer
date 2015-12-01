@@ -42,7 +42,7 @@ $ node index.js
  ((how many )|overall |all ?)?( the ?)?students? pass(ed)? (in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)) 
  ```
 
-- ```
+```
  ((how many )|overall |all ?)?( the ?)?students? fail(ed)? (in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer f
 undamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs10
 07)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|l
