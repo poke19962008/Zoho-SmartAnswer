@@ -211,7 +211,7 @@ var notie = function(){
     function alert(type, message, seconds) {
 
         // Blur active element for use of enter key, focus input
-        document.activeElement.blur();
+        // document.activeElement.blur();
 
         was_clicked_counter++;
 
@@ -240,6 +240,8 @@ var notie = function(){
     }
 
     function alert_show(type, message, seconds) {
+
+        var activeElement = document.activeElement.id;
 
         alert_is_showing = true;
 
@@ -296,6 +298,9 @@ var notie = function(){
             }, duration);
 
         }, 20);
+
+        if(activeElement != "")
+          document.getElementById(activeElement).focus();
 
     }
 

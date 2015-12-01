@@ -24,7 +24,7 @@ $(document).ready(function (){
     setInterval(function(){
       var ind = Math.floor((Math.random() * (alertMsg.length-1)) );
       notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 6);
-      $("#search").focus();
+      // $("#search").focus();
     }, 6000);
 
     $("#title, #search, footer").addClass('animated bounceInUp');

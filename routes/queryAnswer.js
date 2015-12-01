@@ -112,6 +112,8 @@ exports.init = {
   },
 
   overallPassInOneSubject: function (data, result){
+    console.log("Query type: overallPassInOneSubject");
+
     mongoClient.connect(uri, function (err, db){
       var res = {
         JSON: {},
@@ -171,6 +173,8 @@ exports.init = {
   },
 
   overallFailInOneSubject: function (data, result){
+    console.log("Query type: overallFailInOneSubject");
+
     mongoClient.connect(uri, function (err, db){
       var res = {
         JSON: {},
@@ -214,7 +218,7 @@ exports.init = {
             res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
 
             var find = {};
-            find["course." + data.subject[0] + ".ct1"] = {$lt: 5};
+            find["course." + data.subject[0] + ".ct2"] = {$lt: 5};
             db.collection('main').find(find).count(function (err, count){
               res.JSON[data.subject[0]].ct2 = {};
               res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
