@@ -141,29 +141,35 @@ exports.init = {
         });
 
       }else{
-
         var find = {};
         find["course." + data.subject[0] + ".internal"] = {$gt: 25};
         db.collection('main').find(find).count(function (err, count){
           res.JSON[data.subject[0]].internal = {};
           res.JSON[data.subject[0]].internal = ((count/731)*100).toPrecision(4) + "\%";
 
-          res.msg = ((count/731)*100).toPrecision(4)+"\% students passed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students passed: ";
+          res.msg = ((count/731)*100).toPrecision(4)+"\% students passed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students failed: ";
 
           var find = {};
-          find["course." + data.subject[0] + ".ct1"] = {$gt: 5};
-          db.collection('main').find(find).count(function(err, count){
-            res.JSON[data.subject[0]].ct1 = {};
-            res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
+          find["course."+data.subject[0]+".mt"] = {$gt: 10};
+          db.collection('main').find(find).count(function (err, count){
+            res.JSON[data.subject[0]].mt = {};
+            res.JSON[data.subject[0]].mt = ((count/731)*100).toPrecision(4) + "\%";
 
             var find = {};
             find["course." + data.subject[0] + ".ct1"] = {$gt: 5};
-            db.collection('main').find(find).count(function (err, count){
-              res.JSON[data.subject[0]].ct2 = {};
-              res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
+            db.collection('main').find(find).count(function(err, count){
+              res.JSON[data.subject[0]].ct1 = {};
+              res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
 
-              res.template = "card.jade";
-              result(err, res);
+              var find = {};
+              find["course." + data.subject[0] + ".ct2"] = {$gt: 5};
+              db.collection('main').find(find).count(function (err, count){
+                res.JSON[data.subject[0]].ct2 = {};
+                res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
+
+                res.template = "card.jade";
+                result(err, res);
+              });
             });
           });
         });
@@ -212,19 +218,26 @@ exports.init = {
           res.msg = ((count/731)*100).toPrecision(4)+"\% students failed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students failed: ";
 
           var find = {};
-          find["course." + data.subject[0] + ".ct1"] = {$lt: 5};
-          db.collection('main').find(find).count(function(err, count){
-            res.JSON[data.subject[0]].ct1 = {};
-            res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
+          find["course."+data.subject[0]+".mt"] = {$lt: 10};
+          db.collection('main').find(find).count(function (err, count){
+            res.JSON[data.subject[0]].mt = {};
+            res.JSON[data.subject[0]].mt = ((count/731)*100).toPrecision(4) + "\%";
 
             var find = {};
-            find["course." + data.subject[0] + ".ct2"] = {$lt: 5};
-            db.collection('main').find(find).count(function (err, count){
-              res.JSON[data.subject[0]].ct2 = {};
-              res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
+            find["course." + data.subject[0] + ".ct1"] = {$lt: 5};
+            db.collection('main').find(find).count(function(err, count){
+              res.JSON[data.subject[0]].ct1 = {};
+              res.JSON[data.subject[0]].ct1 = ((count/731)*100).toPrecision(4) + "\%";
 
-              res.template = "card.jade";
-              result(err, res);
+              var find = {};
+              find["course." + data.subject[0] + ".ct2"] = {$lt: 5};
+              db.collection('main').find(find).count(function (err, count){
+                res.JSON[data.subject[0]].ct2 = {};
+                res.JSON[data.subject[0]].ct2 = ((count/731)*100).toPrecision(4) + "\%";
+
+                res.template = "card.jade";
+                result(err, res);
+              });
             });
           });
         });
