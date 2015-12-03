@@ -13,7 +13,7 @@ app.get('/query', function (req, res){
 
   if(req.session.usrID == undefined)
     res.redirect('/login');
-  norm.regID.push(req.session.usrID);
+  norm['usrID'] = req.session.usrID;
   console.log(norm);
 
   for(var key in norm.bools){
@@ -84,7 +84,7 @@ app.get('/testQuery', function (req, res) {
 
 app.get('/testAnswer', function(req, res){
   var ans = require('./routes/queryAnswer').init;
-  ans.overallPassInOneSubject({subject: ['CS1033']}, function result(err, doc){
+  ans.friendScoreInOneSubject({subject: ['CS1033'], regID: ['ra1411003010485', 'ra1411003010490']}, function result(err, doc){
     res.send(doc);
   });
 });

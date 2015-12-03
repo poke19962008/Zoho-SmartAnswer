@@ -18,7 +18,7 @@ exports.init = {
     console.log("Query type: scoreInOneSubject");
     mongoClient.connect(uri, function (err, db){
       var cur = db.collection('main').find({
-        "_id": {$regex: data.regID[0], $options: 'i'},
+        "_id": {$regex: data.usrID, $options: 'i'},
       },{
         course: true,
       });
@@ -44,7 +44,7 @@ exports.init = {
   scoreInMultipleSubject: function (data, result){
     console.log("Query type: scoreInMultipleSubject");
 
-    if(data.subject.length < 2 && data.regID.length == 0)
+    if(data.subject.length < 2)
       result("", {
         msg: "Sorry Unable to Process your Query :(",
         template: "invalidCard.jade",
@@ -52,7 +52,7 @@ exports.init = {
     else{
       mongoClient.connect(uri, function (err, db){
         var cur = db.collection('main').find({
-          "_id": {$regex: data.regID[0], $options: 'i'},
+          "_id": {$regex: data.usrID, $options: 'i'},
         },{
           course: true,
         });
@@ -83,7 +83,7 @@ exports.init = {
 
     mongoClient.connect(uri, function(err, db){
       var cur = db.collection('main').find({
-        "_id": {$regex: data.regID[0], $options: 'i'},
+        "_id": {$regex: data.usrID, $options: 'i'},
       },{
         "_id": false,
         "course": true,
@@ -147,7 +147,7 @@ exports.init = {
           res.JSON[data.subject[0]].internal = {};
           res.JSON[data.subject[0]].internal = ((count/731)*100).toPrecision(4) + "\%";
 
-          res.msg = ((count/731)*100).toPrecision(4)+"\% students passed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students failed: ";
+          res.msg = ((count/731)*100).toPrecision(4)+"\% students passed in " + invMapSub[data.subject[0]] + "("+ data.subject[0] + ") internals. Following stats shows students passed: ";
 
           var find = {};
           find["course."+data.subject[0]+".mt"] = {$gt: 10};
@@ -243,6 +243,78 @@ exports.init = {
         });
 
       }
+    });
+  },
+
+  // friendScoreInOneSubject: function (data, result){
+  //   console.log("Query type: friendScoreInOneSubject");
+  //
+  //   mongoClient.connect(uri, function (err, db){
+  //     var find = {
+  //       _id: {
+  //         $in: [],
+  //       }
+  //     };
+  //     var proj = {
+  //       _id: false,
+  //       name: true,
+  //     };
+  //     proj["course." + data.subject[0]] = true;
+  //
+  //     for (var i = 0; i < data.regID.length; i++)
+  //       find._id.$in.push(new RegExp(data.regID[i], 'i'));
+  //
+  //
+  //     var cur = db.collection('main').find(find, proj);
+  //
+  //     cur.toArray(function (err, doc){
+  //       var res = {
+  //         msg: "Score card for ",
+  //         JSON: {},
+  //         template: 'card.jade',
+  //       };
+  //
+  //       for (var i = 0; i < doc.length; i++) {
+  //         res.msg += doc[i].name + ", ";
+  //         res.JSON = doc[i].course;
+  //       }
+  //
+  //       result(err, res);
+  //     });
+  //   });
+  // },
+
+  friendScoreInAllSubject: function (data, result){
+    console.log("Query type: friendScoreInAllSubject");
+
+    mongoClient.connect(uri, function (err, db){
+      var find = {
+        _id: {
+          $in: [],
+        }
+      };
+
+
+      for (var i = 0; i < data.regID.length; i++)
+        find._id.$in.push(new RegExp(data.regID[i], 'i'));
+
+
+      var cur = db.collection('main').find(find, {_id: false, name: true, course: true});
+
+      cur.toArray(function (err, doc){
+        var res = {
+          msg: "Score Card for ",
+          JSON: {},
+          template: 'card.jade',
+        };
+
+        for (var i = 0; i < doc.length; i++) {
+          res.msg += doc[i].name + ".";
+          res.JSON = doc[i].course;
+        }
+
+        result(err, res);
+      });
     });
   },
 

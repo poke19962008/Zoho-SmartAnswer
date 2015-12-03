@@ -23,9 +23,11 @@ var synonym = {
 
 var subjectRe = "(math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d\.c\.f|d\.c\.f\.|cs1003)|((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o\.o\.a\.d\.|o\.o\.a\.d|o\.a\.d\.|o\.a\.d|cs1009)|(((object oriented programming)|oops?|o\.o\.p(\.s)?(\.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)";
 
+var regIDRe = "(ra|RA)(1411003010)[0-7][0-9]{2}";
+
 var bools = {
   attendance: /attendance/g,
-  marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?))/g,
+  marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?)|(performed|performance))/g,
 };
 
 var query = {
@@ -67,8 +69,23 @@ var query = {
 
       answer: answers.overallFailInOneSubject,
     },
-  },
 
+    friendScoreInOneSubject: {
+      queries: [
+        "((scores?|performance) of ("+regIDRe+")( in)?( "+subjectRe+"))|(((how much )|(what('?s) )|)?("+regIDRe+") (score(d|s)?|performance|performed)( in)?( "+subjectRe+"))"
+      ],
+
+      answer: answers.friendScoreInOneSubject,
+    },
+
+    friendScoreInAllSubject: {
+      queries: [
+        "((overall |complete )?(scores?|performance) of ("+regIDRe+"))|(((how much )|(what('?s) )|(overall ))?("+regIDRe+") (score(d|s)?|performance|performed))"
+      ],
+
+      answer: answers.friendScoreInAllSubject,
+    },
+  },
 };
 
 exports.util = util;
