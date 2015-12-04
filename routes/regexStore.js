@@ -72,7 +72,8 @@ var query = {
 
     friendScoreInOneSubject: {
       queries: [
-        "((scores?|performance) of ("+regIDRe+")( in)?( "+subjectRe+"))|(((how much )|(what('?s) )|)?("+regIDRe+") (score(d|s)?|performance|performed)( in)?( "+subjectRe+"))"
+        "(what is the )?(scores?|performance)( of)? ("+regIDRe+")( in)?( "+subjectRe+")",
+        "how "+regIDRe+" performed in "+subjectRe,
       ],
 
       answer: answers.friendScoreInOneSubject,
@@ -80,7 +81,8 @@ var query = {
 
     friendScoreInAllSubject: {
       queries: [
-        "((overall |complete )?(scores?|performance) of ("+regIDRe+"))|(((how much )|(what('?s) )|(overall ))?("+regIDRe+") (score(d|s)?|performance|performed))"
+        "((overall |complete )?(scores?|performance) of ("+regIDRe+"))",
+        "((how much )|(what('?s) )|(overall ))?("+regIDRe+") (score(d|s)?|performance|performed)"
       ],
 
       answer: answers.friendScoreInAllSubject,

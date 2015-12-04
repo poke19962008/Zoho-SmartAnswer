@@ -246,43 +246,41 @@ exports.init = {
     });
   },
 
-  // friendScoreInOneSubject: function (data, result){
-  //   console.log("Query type: friendScoreInOneSubject");
-  //
-  //   mongoClient.connect(uri, function (err, db){
-  //     var find = {
-  //       _id: {
-  //         $in: [],
-  //       }
-  //     };
-  //     var proj = {
-  //       _id: false,
-  //       name: true,
-  //     };
-  //     proj["course." + data.subject[0]] = true;
-  //
-  //     for (var i = 0; i < data.regID.length; i++)
-  //       find._id.$in.push(new RegExp(data.regID[i], 'i'));
-  //
-  //
-  //     var cur = db.collection('main').find(find, proj);
-  //
-  //     cur.toArray(function (err, doc){
-  //       var res = {
-  //         msg: "Score card for ",
-  //         JSON: {},
-  //         template: 'card.jade',
-  //       };
-  //
-  //       for (var i = 0; i < doc.length; i++) {
-  //         res.msg += doc[i].name + ", ";
-  //         res.JSON = doc[i].course;
-  //       }
-  //
-  //       result(err, res);
-  //     });
-  //   });
-  // },
+  friendScoreInOneSubject: function (data, result){
+    console.log("Query type: friendScoreInOneSubject");
+
+    mongoClient.connect(uri, function (err, db){
+      var find = {
+        _id: {
+          $in: [],
+        }
+      };
+      var proj = {
+        _id: false,
+        name: true,
+      };
+      proj["course." + data.subject[0]] = true;
+
+      find._id.$in.push(new RegExp(data.regID[0], 'i'));
+
+
+      var cur = db.collection('main').find(find, proj);
+
+      cur.toArray(function (err, doc){
+        var res = {
+          msg: "",
+          JSON: {},
+          template: 'card.jade',
+        };
+
+        res.msg = doc[0].name + " scored "+ doc[0].course[data.subject[0]].internal + " in "+ data.subject[0]+ " internal.";
+        res.JSON['Score card of '+doc[0].name+' in '+ data.subject[0]] = {};
+        res.JSON['Score card of '+doc[0].name+' in '+ data.subject[0]] = doc[0].course[data.subject[0]];
+
+        result(err, res);
+      });
+    });
+  },
 
   friendScoreInAllSubject: function (data, result){
     console.log("Query type: friendScoreInAllSubject");
