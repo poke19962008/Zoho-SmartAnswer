@@ -25,29 +25,48 @@ $ node index.js
 
 ## Queries It Can Answer
 
-  ```
- /((how much i )|(what(\'?s) my ))?(scored?|marks?|got)( in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033))( ??)?$/g 
- ```
+Regexes of all the queries are stored inside `./routes/regexStore.js`.
 
-  ```
- /((how much i )|(what(\'?s) my ))?(scored?|marks?|got)( in)? (((((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033))( ?,? ?)){2,}( ?(and|&) ((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)))?))|(((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)) (and|&) ((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)))/g 
- ```
+### Score in one subject. 
+
+-  How much i scored in dcf?
+-  Score in dcf?
+
+### Score in multiple subjects.
+
+- How much i scored in dcf, oops and micro??
+- My scores in dcf, oops and micro?
+
+### Failed Subjects
+
+- In how many subjects i failed?
+- Subjects in which i failed?
 
 
- ```
- /((in)? (what|which|(how many)) )?(subjects?|courses?|subs?) ((i (have)?)|(i))? ((failed(ed)?)|(drop(p?ed)?))( ?\?)?$/g 
- ```
+### Overall Students Passed in One Subject
 
-```
- ((how many )|overall |all ?)?( the ?)?students? pass(ed)? (in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer fundamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs1007)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|laboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033)) 
- ```
+- How many students passed in maths?
+- Overall students passed in maths?
 
-```
- ((how many )|overall |all ?)?( the ?)?students? fail(ed)? (in )?((math|maths|ma1003)|((electrical)|(electric)|(ee)|(eee)|ee1053)|((digital computer f
-undamentals)|dcf|d.c.f|d.c.f.|cs1003)|((object oriented programming)|oops?|o.o.p(.s)?(.)?)|((microprocessor and interfacing)|micro|microprocessor|cs10
-07)|((object oriented analysis and design)|ooad|oad|o.o.a.d.|o.o.a.d|o.a.d.|o.a.d|cs1009)|(((object oriented programming)|oops?|o.o.p(.s)?(.)?) (lab|l
-aboratory)|cs1031)|(((microprocessor and interfacing)|micro|microprocessor) (lab|laboratory)|cs1033))
- ```
+### Overall Students Failed in One Subject
+
+- How many students failed in electrical?
+- Overall students failed in electrical?
+
+### Marks of Other Student in All Subject
+
+- overall performance of RA141100301048?
+- complete scores of ra1411003010485
+
+### Marks of other student in one subject
+
+- What are the marks of ra1411003010485 in maths??
+- How ra1411003010485 performed in maths??
+
+### Compare with other students
+
+- compare me with ra1411003010485
+- Compare my performance with ra1411003010485
 
 ## Database Schema
 
