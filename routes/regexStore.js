@@ -73,7 +73,7 @@ var query = {
     friendScoreInOneSubject: {
       queries: [
         "(what is the )?(scores?|performance)( of)? ("+regIDRe+")( in)?( "+subjectRe+")",
-        "how "+regIDRe+" performed in "+subjectRe,
+        "how "+regIDRe+" (performed|scored) in "+subjectRe,
       ],
 
       answer: answers.friendScoreInOneSubject,
@@ -90,7 +90,7 @@ var query = {
 
     compareInAllSubject: {
         queries: [
-          "compare (me|myself) (with|wrt|(with respect to)|(w\.r\.t(\.)?)) "+regIDRe,
+          "compare (me|myself|(my performance)) (with|wrt|(with respect to)|(w\.r\.t(\.)?)) "+regIDRe,
         ],
 
         answer: answers.compareInAllSubject,
