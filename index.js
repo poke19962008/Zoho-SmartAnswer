@@ -84,7 +84,9 @@ app.get('/testQuery', function (req, res) {
 
 app.get('/testAnswer', function(req, res){
   var ans = require('./routes/queryAnswer').init;
-  ans.friendScoreInOneSubject({subject: ['CS1033'], regID: ['ra1411003010485', 'ra1411003010490']}, function result(err, doc){
-    res.send(doc);
+  ans.compareInOneSubject({subject: ['CS1033'], regID: ['ra1411003010485'], usrID: "ra1411003010490"}, function result(err, doc){
+    // console.log(doc);
+    res.render(doc.template ,doc);
+    // res.send(doc);
   });
 });

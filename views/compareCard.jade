@@ -1,7 +1,7 @@
-div.card-section(id="info-card")
+iv.card-section(id="info-card")
 	div#card-msg
 		= msg
-  
+    
 - each val, cardMsg in JSON
 	div.card-section(id="info-card")
 		div#card-msg
@@ -16,7 +16,11 @@ div.card-section(id="info-card")
 								= key
 				tbody
 					tr
-						- each value, key in JSON[cardMsg]
-							th
-								= value
-		
+						- each d, key in JSON[cardMsg]
+							- var arr = JSON[cardMsg][key]
+							th= arr[0]
+					tr
+						- each d, key in JSON[cardMsg]
+							- var arr = JSON[cardMsg][key]
+							th= arr[1]
+            

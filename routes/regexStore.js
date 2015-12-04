@@ -27,7 +27,7 @@ var regIDRe = "(ra|RA)(1411003010)[0-7][0-9]{2}";
 
 var bools = {
   attendance: /attendance/g,
-  marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?)|(performed|performance))/g,
+  marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?)|(performed|performance))|compare/g,
 };
 
 var query = {
@@ -87,6 +87,16 @@ var query = {
 
       answer: answers.friendScoreInAllSubject,
     },
+
+    compareInAllSubject: {
+        queries: [
+          "compare (me|myself) (with|wrt|(with respect to)|(w\.r\.t(\.)?)) "+regIDRe,
+        ],
+
+        answer: answers.compareInAllSubject,
+    },
+
+
   },
 };
 

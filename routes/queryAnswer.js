@@ -316,4 +316,41 @@ exports.init = {
     });
   },
 
+  compareInAllSubject: function (data, result){
+    console.log("Query type: compareInAllSubject");
+
+    mongoClient.connect(uri, function (err, db){
+      var find = {_id: {$in: [new RegExp(data.usrID, 'i'), new RegExp(data.regID[0], 'i')] }};
+      var projection = {_id: false, course: true, name: true};
+
+      var cur = db.collection('main').find(find, projection);
+      cur.toArray(function(err, doc){
+        var res = {
+          msg: "Score Card for " + doc[0].name + ' Vs. ' + doc[1].name ,
+          JSON: {},
+          template: "compareCard.jade",
+        };
+
+        for(var sCode in invMapSub){
+          var data = {};
+
+          data.name = [doc[0].name, doc[1].name];
+          for (var test in doc[0].course[sCode]) {
+            if(test == 'title' || test == 'qat')
+              continue;
+
+            data[test] = [];
+            data[test].push(doc[0].course[sCode][test]);
+            data[test].push(doc[1].course[sCode][test]);
+          }
+
+          res.JSON[sCode] = data;
+        }
+
+        result(err, res);
+      });
+
+    });
+  }
+
 };
