@@ -24,7 +24,6 @@ $(document).ready(function (){
     setInterval(function(){
       var ind = Math.floor((Math.random() * (alertMsg.length-1)) );
       notie.alert(4, "Search for \'"+alertMsg[ind]+"\'" , 6);
-      // $("#search").focus();
     }, 6000);
 
     $("#title, #search, footer").addClass('animated bounceInUp');
@@ -40,7 +39,10 @@ $("#search").keyup(function (e){
       cache: false,
     })
     .done(function (msg){
-      $("#card-div").html(msg);
+      if(msg == "session expired")
+        window.location = nodeHost + "/login";
+      else
+        $("#card-div").html(msg);
     });
   }
 });

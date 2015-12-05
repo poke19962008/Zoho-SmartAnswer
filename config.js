@@ -7,7 +7,7 @@ function config(){
 
     "session": {
       "secret": "iloveapples",
-      "expiration": 360000000,
+      "expiration": 36000000,
     }
   };
   return conf;

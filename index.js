@@ -12,39 +12,40 @@ app.get('/query', function (req, res){
   var norm = normalize(query);
 
   if(req.session.usrID == undefined)
-    res.redirect('/login');
-  norm['usrID'] = req.session.usrID;
-  console.log(norm);
+    res.send("session expired");
+  else{
+    norm['usrID'] = req.session.usrID;
+    console.log(norm);
+    for(var key in norm.bools){
+      if(found) break;
 
-  for(var key in norm.bools){
-    if(found) break;
+      if(norm.bools[key] && !found){
+        for(var queryType in reStore.query[key]){
+          if(found) break;
+          var reQueries = reStore.query[key][queryType];
 
-    if(norm.bools[key] && !found){
-      for(var queryType in reStore.query[key]){
-        if(found) break;
-        var reQueries = reStore.query[key][queryType];
+          for(var ind in reQueries.queries){
+            var re = reQueries.queries[ind];
 
-        for(var ind in reQueries.queries){
-          var re = reQueries.queries[ind];
+            if(new RegExp(re).test(query)){
+              reQueries.answer(norm, function result(err, doc){
+                res.render(doc.template, doc);
+              });
+              found = true;
+              break;
+            }
 
-          if(new RegExp(re).test(query)){
-            reQueries.answer(norm, function result(err, doc){
-              res.render(doc.template, doc);
-            });
-            found = true;
-            break;
           }
-
         }
       }
     }
-  }
 
-  if(!found)
-    res.render('invalidCard.jade', {
-      msg: "Sorry Unable to Process your Query :(",
-      template: "invalidCard.jade",
-    });
+    if(!found)
+      res.render('invalidCard.jade', {
+        msg: "Sorry Unable to Process your Query :(",
+        template: "invalidCard.jade",
+      });
+  }
 
 });
 
