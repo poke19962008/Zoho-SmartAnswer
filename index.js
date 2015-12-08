@@ -6,6 +6,7 @@ var normalize = require('./routes/normalize').normalize;
 
 app.get('/query', function (req, res){
   var query = req.query.q;
+  query = query.toLowerCase();
   var found = false;
 
   query = query.replace(/(\s){2,}|(\n)+|(\r)+|(\t)+/g, " ");
@@ -55,6 +56,7 @@ app.get('/createSession', function(req, res){
 
   if(reID.test(ID)){
     req.session.usrID = ID;
+    ID.toLowerCase();
     res.send({ status: "success" });
   }
   else
@@ -63,7 +65,7 @@ app.get('/createSession', function(req, res){
 
 app.get('/getQueryList', function (req, res){
   var q = [
-   'compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?' 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?', 'How many students passed in maths?'
+   'compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?', 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?', 'How many students passed in maths?'
   ];
 
   res.send(q);
