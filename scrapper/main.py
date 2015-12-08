@@ -9,7 +9,7 @@ url = root + str(studentID)
 
 connected = False
 try:
-	con = pymongo.Connection(host=mongoURI, port=27017)
+	con = pymongo.MongoClient(host=mongoURI, port=27017)
 	db = con['zoho']
 	connected = True
 except:
