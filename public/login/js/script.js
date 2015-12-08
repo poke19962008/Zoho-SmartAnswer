@@ -1,4 +1,4 @@
-var nodeHost = "http://localhost:3000";
+var nodeHost = "http://104.236.192.93:3000";
 
 $(document).ready(function (){
 });
@@ -13,7 +13,7 @@ $("#login-btn").click(function (){
   .done(function (msg){
     if(msg.status == "success"){
       document.location = nodeHost + "/";
-      document.cookie = "isLoggedIn=true; expires="+new Date(Date.now() + 360000000)+"; path=/;";
+      document.cookie = "isLoggedIn=true; expires="+new Date(Date.now() + 36000000)+"; path=/;";
     }
     else if(msg.status == "not Valid")
       notie.alert(3, "Enter valid ID.", 2);
