@@ -1,4 +1,4 @@
-var nodeHost = "http://104.236.192.93:3000";
+var nodeHost = "http://localhost:3000";
 
 $(document).ready(function (){
 });
