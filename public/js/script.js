@@ -32,6 +32,8 @@ $(document).ready(function (){
 
 $("#search").keyup(function (e){
   if(e.keyCode == "13"){
+    $("#card-div").html("<center><img src=\"img/loading-bars.svg\" alt=\"Loading icon\" /></center>");
+    
     $.ajax({
       url: nodeHost + "/query",
       data: { q: $('#search').val() },
