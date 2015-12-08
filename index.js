@@ -63,7 +63,7 @@ app.get('/createSession', function(req, res){
 
 app.get('/getQueryList', function (req, res){
   var q = [
-    'How much I scored in oops, micro and ooad', 'How much I scored in dcf', 'How many subjects i failed', 'How many students passed in maths'
+   'compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?' 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?', 'How many students passed in maths?'
   ];
 
   res.send(q);

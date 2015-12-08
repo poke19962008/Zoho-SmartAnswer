@@ -6,6 +6,8 @@ Search engine for checking your internal marks for SRMites. It includes complex 
 
 ## How to run
 
+Checkout first beta launch on `104.236.192.93:3000`
+
 ### Setting up MongoDB
 
 Delete the lock file present in `./data`. And run:
