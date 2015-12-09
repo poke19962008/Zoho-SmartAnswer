@@ -1,6 +1,9 @@
 var nodeHost = "http://localhost:3000";
 
 $(document).ready(function (){
+	$("#loading").css("visibility", "hidden");
+	$("#title, .container, footer").css("visibility", "visible");
+
 });
 
 $("#login-btn").click(function (){
