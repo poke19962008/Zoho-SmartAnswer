@@ -1,6 +1,9 @@
 var nodeHost = "http://104.236.192.93:3000";
 
 $(document).ready(function (){
+	$("#loading").css("visibility", "hidden");
+	$("#title, .container, footer").css("visibility", "visible");
+
 });
 
 $("#login-btn").click(function (){
