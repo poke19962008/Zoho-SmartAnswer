@@ -9,6 +9,10 @@ body {
   margin-top: 100px;
 }
 
+#title, .container, footer {
+  visibility: hidden;
+}
+
 h1 {
   font-size: 75px;
   font-weight: normal;
@@ -20,7 +24,7 @@ h1 span {
   color: #f9a866;
 }
 
-footer {
+footer{
   margin-top: 10px;
   margin-bottom: 5px;
 
