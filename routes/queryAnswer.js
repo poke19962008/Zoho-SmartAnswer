@@ -15,7 +15,7 @@ var invMapSub = {
 
 exports.init = {
   scoreInOneSubject: function(data, result){
-    console.log("Query type: scoreInOneSubject");
+   // console.log("Query type: scoreInOneSubject");
     mongoClient.connect(uri, function (err, db){
       var cur = db.collection('main').find({
         "_id": {$regex: data.usrID, $options: 'i'},
@@ -42,7 +42,7 @@ exports.init = {
   },
 
   scoreInMultipleSubject: function (data, result){
-    console.log("Query type: scoreInMultipleSubject");
+   //  console.log("Query type: scoreInMultipleSubject");
 
     if(data.subject.length < 2)
       result("", {
@@ -79,7 +79,7 @@ exports.init = {
   },
 
   failedSubjects: function (data, result){
-    console.log("Query type: failedSubjects");
+   // console.log("Query type: failedSubjects");
 
     mongoClient.connect(uri, function(err, db){
       var cur = db.collection('main').find({
@@ -112,7 +112,7 @@ exports.init = {
   },
 
   overallPassInOneSubject: function (data, result){
-    console.log("Query type: overallPassInOneSubject");
+   // console.log("Query type: overallPassInOneSubject");
 
     mongoClient.connect(uri, function (err, db){
       var res = {
@@ -179,7 +179,7 @@ exports.init = {
   },
 
   overallFailInOneSubject: function (data, result){
-    console.log("Query type: overallFailInOneSubject");
+    //console.log("Query type: overallFailInOneSubject");
 
     mongoClient.connect(uri, function (err, db){
       var res = {
@@ -247,7 +247,7 @@ exports.init = {
   },
 
   friendScoreInOneSubject: function (data, result){
-    console.log("Query type: friendScoreInOneSubject");
+    //console.log("Query type: friendScoreInOneSubject");
 
     mongoClient.connect(uri, function (err, db){
       var find = {
@@ -283,7 +283,7 @@ exports.init = {
   },
 
   friendScoreInAllSubject: function (data, result){
-    console.log("Query type: friendScoreInAllSubject");
+    // console.log("Query type: friendScoreInAllSubject");
 
     mongoClient.connect(uri, function (err, db){
       var find = {
@@ -317,7 +317,7 @@ exports.init = {
   },
 
   compareInAllSubject: function (data, result){
-    console.log("Query type: compareInAllSubject");
+   // console.log("Query type: compareInAllSubject");
 
     mongoClient.connect(uri, function (err, db){
       var find = {_id: {$in: [new RegExp(data.usrID, 'i'), new RegExp(data.regID[0], 'i')] }};

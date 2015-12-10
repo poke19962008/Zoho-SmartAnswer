@@ -1,8 +1,16 @@
 var app = require('./expressApp').port_3000;
 var reStore = require('./routes/regexStore');
 var normalize = require('./routes/normalize').normalize;
+var fs = require('fs');
+var winston = require('winston');
 
 
+var logger = new (winston.Logger)({
+    transports: [
+     
+      new (winston.transports.File)({ filename: 'log/queriesSearched.log' })
+    ]
+  });
 
 app.get('/query', function (req, res){
   var query = req.query.q;
@@ -16,7 +24,7 @@ app.get('/query', function (req, res){
     res.send("session expired");
   else{
     norm['usrID'] = req.session.usrID;
-    console.log(norm);
+   // console.log(norm);
     for(var key in norm.bools){
       if(found) break;
 
@@ -33,6 +41,7 @@ app.get('/query', function (req, res){
                 res.render(doc.template, doc);
               });
               found = true;
+              logger.log('info', "VLD | ID: %s  query: %s", req.session.usrID, req.query.q);
               break;
             }
 
@@ -41,11 +50,14 @@ app.get('/query', function (req, res){
       }
     }
 
-    if(!found)
+    if(!found){
       res.render('invalidCard.jade', {
         msg: "Sorry Unable to Process your Query :(",
         template: "invalidCard.jade",
       });
+        
+       logger.log('info', "INV | ID: %s  query: %s", req.session.usrID, req.query.q);
+     }
   }
 
 });
@@ -53,10 +65,10 @@ app.get('/query', function (req, res){
 app.get('/createSession', function(req, res){
   var reID = new RegExp("((ra)|(RA))(1411003010)[0-7][0-9]{2}$");
   var ID = req.query.id;
+  ID = ID.toUpperCase();
 
   if(reID.test(ID)){
     req.session.usrID = ID;
-    ID.toLowerCase();
     res.send({ status: "success" });
   }
   else
