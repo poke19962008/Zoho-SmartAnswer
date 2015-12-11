@@ -7,7 +7,7 @@ var winston = require('winston');
 
 var logger = new (winston.Logger)({
     transports: [
-     
+
       new (winston.transports.File)({ filename: 'log/queriesSearched.log' })
     ]
   });
@@ -24,7 +24,8 @@ app.get('/query', function (req, res){
     res.send("session expired");
   else{
     norm['usrID'] = req.session.usrID;
-   // console.log(norm);
+    norm['query'] = query;
+  //  console.log(norm);
     for(var key in norm.bools){
       if(found) break;
 
@@ -32,7 +33,7 @@ app.get('/query', function (req, res){
         for(var queryType in reStore.query[key]){
           if(found) break;
           var reQueries = reStore.query[key][queryType];
-
+          
           for(var ind in reQueries.queries){
             var re = reQueries.queries[ind];
 
@@ -55,7 +56,7 @@ app.get('/query', function (req, res){
         msg: "Sorry Unable to Process your Query :(",
         template: "invalidCard.jade",
       });
-        
+
        logger.log('info', "INV | ID: %s  query: %s", req.session.usrID, req.query.q);
      }
   }
@@ -76,9 +77,8 @@ app.get('/createSession', function(req, res){
 });
 
 app.get('/getQueryList', function (req, res){
-  var q = [
-  'My overall score?','compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?', 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?', 'How many students passed in maths?'
-  ];
+  var q =[
+   'Get id of Sayan Das',  'How much I scored in oops, micro and ooad', 'How much I scored in dcf', 'How many subjects i failed', 'How many students passed in maths', 'My overall score?','compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?', 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?'];
 
   res.send(q);
 });
@@ -92,16 +92,14 @@ app.get('/testQuery', function (req, res) {
   norm.regID.push(req.session.usrID);
   console.log(norm);
 
-  reStore.query.marks.failedSubjects.answer(norm, function result(err, doc){
+  reStore.query.marks.getID.answer(norm, function result(err, doc){
     res.send(doc);
   });
 });
 
 app.get('/testAnswer', function(req, res){
   var ans = require('./routes/queryAnswer').init;
-  ans.compareInOneSubject({subject: ['CS1033'], regID: ['ra1411003010485'], usrID: "ra1411003010490"}, function result(err, doc){
-    // console.log(doc);
-    res.render(doc.template ,doc);
-    // res.send(doc);
+  ans.getID({query: "id of sayan das", usrID: "ra1411003010490"}, function result(err, doc){
+    res.render(doc.template, doc);
   });
 });

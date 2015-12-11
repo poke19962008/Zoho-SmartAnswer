@@ -28,6 +28,7 @@ var regIDRe = "(ra|RA)(1411003010)[0-7][0-9]{2}";
 var bools = {
   attendance: /attendance/g,
   marks: /marks|scored?|fail(ed)?|((pass(ed)?)|(drop(p?ed)?)|(performed|performance))|compare/g,
+  info: /id/g
 };
 
 var query = {
@@ -97,14 +98,23 @@ var query = {
     },
 
     scoreInAllSubjects: {
-	queries: [
-	    "((my )?(overall|complete) (scores?|(score card)|performance)( ?\?)?)$"
-        ],
+	    queries: [
+	      "((my )?(overall|complete) (scores?|(score card)|performance)( ?\?)?)$"
+      ],
 
-	answer: answers.scoreInAllSubjects,
-    },   
-
+	      answer: answers.scoreInAllSubjects,
+    },
   },
+
+  info: {
+    getID: {
+      queries: [
+        "(what is (the)?)?(id|(reg\.? i\.?d\.?)|(registration i\.?d\.?)) of"
+      ],
+
+      answer: answers.getID,
+    },
+  }
 };
 
 exports.util = util;
