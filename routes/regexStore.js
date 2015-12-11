@@ -96,6 +96,13 @@ var query = {
         answer: answers.compareInAllSubject,
     },
 
+    scoreInAllSubjects: {
+	queries: [
+	    "((my )?(overall|complete) (scores?|(score card)|performance)( ?\?)?)$"
+        ],
+
+	answer: answers.scoreInAllSubjects,
+    },   
 
   },
 };

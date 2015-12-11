@@ -77,6 +77,24 @@ exports.init = {
       });
     }
   },
+  
+  scoreInAllSubjects: function (data, result){
+     // console.log("Query type: Score in multiple subjects");
+     mongoClient.connect(uri, function(err, db){
+	var cur = db.collection('main').find({"_id": {$regex:  data.usrID, $options: 'i'}},{"_id": false,"name": true, "course": true});
+	cur.toArray(function (err, doc){
+	      var res = {
+		msg: doc[0].name + " overall score card.",
+		JSON: {},	
+		template: "card.jade"
+	      };
+
+	       res.JSON = doc[0].course;
+	       result(err, res);
+	});
+     });
+ 
+  },
 
   failedSubjects: function (data, result){
    // console.log("Query type: failedSubjects");
