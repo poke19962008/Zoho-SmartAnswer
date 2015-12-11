@@ -13,6 +13,21 @@ var invMapSub = {
   CS1033: "Microprocessor and Interfacing",
 };
 
+function extractName(query){
+  var toRemove = [
+    "(what is (the)?)?(id|(reg\.? i\.?d\.?)|(registration i\.?d\.?)) of "
+  ];
+
+  for (var i = 0; i < toRemove.length; i++) {
+    var re = new RegExp(toRemove[i]);
+    if(re.test(query)){
+      var name = query.replace(re, "");
+      return name;
+      break;
+    }
+  }
+}
+
 exports.init = {
   scoreInOneSubject: function(data, result){
    // console.log("Query type: scoreInOneSubject");
@@ -77,7 +92,7 @@ exports.init = {
       });
     }
   },
-  
+
   scoreInAllSubjects: function (data, result){
      // console.log("Query type: Score in multiple subjects");
      mongoClient.connect(uri, function(err, db){
@@ -85,7 +100,7 @@ exports.init = {
 	cur.toArray(function (err, doc){
 	      var res = {
 		msg: doc[0].name + " overall score card.",
-		JSON: {},	
+		JSON: {},
 		template: "card.jade"
 	      };
 
@@ -93,7 +108,7 @@ exports.init = {
 	       result(err, res);
 	});
      });
- 
+
   },
 
   failedSubjects: function (data, result){
@@ -369,6 +384,47 @@ exports.init = {
       });
 
     });
-  }
+  },
+
+  getID: function (data, result){
+    var name = extractName(data.query);
+    console.log("Query type: getID");
+
+    mongoClient.connect(uri, function(err, db){
+      var find = {
+        'name': {
+          $regex: name,
+          $options: 'i',
+        }
+      };
+
+      var proj = {
+        "_id": true,
+        "name": true,
+      };
+      var cur = db.collection('main').find(find, proj);
+
+      cur.toArray(function (err, doc){
+        if(doc.length == 0){
+          res.render('invalidCard.jade', {
+            msg: "No result for " + name,
+            template: "invalidCard.jade",
+          });
+        }else {
+          var res = {
+            msg: "Found " + doc.length + " results for " + name,
+            JSON: [],
+            template: "nameCard.jade"
+          };
+
+          for (var i = 0; i < doc.length; i++) {
+            res.JSON.push({name: doc[i].name, regID: doc[i]._id})
+          }
+
+          result(err, res);
+        }
+      });
+    });
+  },
 
 };
