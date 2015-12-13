@@ -73,7 +73,7 @@ var query = {
 
     friendScoreInOneSubject: {
       queries: [
-        "(what is the )?(scores?|performance)( of)? ("+regIDRe+")( in)?( "+subjectRe+")",
+        "(what is the )?(scores?|performance)( of| for)? ("+regIDRe+")( in)?( "+subjectRe+")",
         "how "+regIDRe+" (performed|scored) in "+subjectRe,
       ],
 
@@ -82,7 +82,7 @@ var query = {
 
     friendScoreInAllSubject: {
       queries: [
-        "((overall |complete )?(scores?|performance) of ("+regIDRe+"))",
+        "((overall |complete )?(scores?|performance)( of| for) ("+regIDRe+"))",
         "((how much )|(what('?s) )|(overall ))?("+regIDRe+") (score(d|s)?|performance|performed)"
       ],
 
