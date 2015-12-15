@@ -12,7 +12,7 @@ var logger = new (winston.Logger)({
     ]
   });
 
-app.get('/query', function (req, res){
+app.get('/zoho/query', function (req, res){
   var query = req.query.q;
   query = query.toLowerCase();
   var found = false;
@@ -63,7 +63,7 @@ app.get('/query', function (req, res){
 
 });
 
-app.get('/createSession', function(req, res){
+app.get('/zoho/createSession', function(req, res){
   var reID = new RegExp("((ra)|(RA))(1411003010)[0-7][0-9]{2}$");
   var ID = req.query.id;
   ID = ID.toUpperCase();
@@ -76,14 +76,14 @@ app.get('/createSession', function(req, res){
     res.send({ status: "not Valid" });
 });
 
-app.get('/getQueryList', function (req, res){
+app.get('/zoho/getQueryList', function (req, res){
   var q =[
    'Get id of Sayan Das',  'How much I scored in oops, micro and ooad', 'How much I scored in dcf', 'How many subjects i failed', 'How many students passed in maths', 'My overall score?','compare me with ra1411003010485?', 'How ra1411003010485 performed in oops?', 'Overall performance of ra1411003010485?', 'how many students failed in maths?',  'How much I scored in oops, micro and ooad?', 'How much I scored in dcf?', 'How many subjects i failed?'];
 
   res.send(q);
 });
 
-app.get('/testQuery', function (req, res) {
+app.get('/zoho/testQuery', function (req, res) {
   var query = req.query.q;
 
   var norm = normalize(query);
@@ -97,7 +97,7 @@ app.get('/testQuery', function (req, res) {
   });
 });
 
-app.get('/testAnswer', function(req, res){
+app.get('/zoho/testAnswer', function(req, res){
   var ans = require('./routes/queryAnswer').init;
   ans.getID({query: "id of sayan das", usrID: "ra1411003010490"}, function result(err, doc){
     res.render(doc.template, doc);

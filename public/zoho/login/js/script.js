@@ -1,4 +1,4 @@
-var nodeHost = "http://104.236.192.93:3000";
+var nodeHost = "http://sayandas.xyz/zoho";
 
 $(document).ready(function (){
 	$("#loading").css("visibility", "hidden");

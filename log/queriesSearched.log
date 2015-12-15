@@ -40,3 +40,42 @@
 {"level":"info","message":"VLD | ID: RA1411003010485  query: my complete performance","timestamp":"2015-12-11T11:05:25.843Z"}
 {"level":"info","message":"VLD | ID: RA1411003010485  query: overall performance","timestamp":"2015-12-11T11:06:54.671Z"}
 {"level":"info","message":"VLD | ID: RA1411003010485  query: overall performance of ra1411003010470","timestamp":"2015-12-11T11:07:03.093Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of sayan da","timestamp":"2015-12-11T17:27:28.618Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: RA1411003010487","timestamp":"2015-12-11T17:30:03.919Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: RA1411003010455","timestamp":"2015-12-11T17:33:23.385Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How many students failed in math","timestamp":"2015-12-11T17:33:50.375Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How many students passed in micro internals","timestamp":"2015-12-11T17:34:24.644Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How many students passed in japanese","timestamp":"2015-12-11T17:34:41.350Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How many students failed in japanese","timestamp":"2015-12-11T17:34:49.288Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How much I scored in microprocessor","timestamp":"2015-12-11T17:35:02.348Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How much I scored in pd","timestamp":"2015-12-11T17:35:22.727Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How much I scored in dcf","timestamp":"2015-12-11T17:35:26.820Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How much I scored in oops","timestamp":"2015-12-11T17:35:30.464Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How much I scored in ooad","timestamp":"2015-12-11T17:35:36.196Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How much I scored in Japanese","timestamp":"2015-12-11T17:35:45.251Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How much I scored in French","timestamp":"2015-12-11T17:35:50.201Z"}
+{"level":"info","message":"INV | ID: RA1411003010487  query: How much I scored in mathematics","timestamp":"2015-12-11T17:35:55.248Z"}
+{"level":"info","message":"VLD | ID: RA1411003010487  query: How much I scored in maths","timestamp":"2015-12-11T17:35:58.945Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in dcf","timestamp":"2015-12-12T12:58:38.977Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in oops","timestamp":"2015-12-12T16:22:09.185Z"}
+{"level":"info","message":"VLD | ID: RA1411003010300  query: how many students passed in maths","timestamp":"2015-12-12T17:25:20.655Z"}
+{"level":"info","message":"INV | ID: RA1411003010300  query: how many students got s in maths","timestamp":"2015-12-12T17:25:46.917Z"}
+{"level":"info","message":"VLD | ID: RA1411003010300  query: my overall score","timestamp":"2015-12-12T17:26:07.233Z"}
+{"level":"info","message":"INV | ID: RA1411003010300  query: overall score for ra1411003010287","timestamp":"2015-12-12T17:27:09.180Z"}
+{"level":"info","message":"INV | ID: RA1411003010300  query: overall score  ra1411003010287","timestamp":"2015-12-12T17:27:13.789Z"}
+{"level":"info","message":"INV | ID: RA1411003010300  query: overall score ra1411003010287","timestamp":"2015-12-12T17:27:17.313Z"}
+{"level":"info","message":"VLD | ID: RA1411003010300  query: overall score of ra1411003010287","timestamp":"2015-12-12T17:27:31.441Z"}
+{"level":"info","message":"VLD | ID: RA1411003010300  query: overall score of ra1411003010289","timestamp":"2015-12-12T17:27:52.962Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: score for ra1411003010456","timestamp":"2015-12-12T20:58:03.167Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: score for ra1411003010456","timestamp":"2015-12-12T21:00:26.566Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score for ra1411003010456","timestamp":"2015-12-12T21:01:41.936Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of leel","timestamp":"2015-12-12T21:01:58.982Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010300","timestamp":"2015-12-12T21:02:07.002Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of anumey","timestamp":"2015-12-13T11:46:42.573Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010496","timestamp":"2015-12-13T11:46:50.980Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of bipul","timestamp":"2015-12-13T11:47:44.896Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010533","timestamp":"2015-12-13T11:47:54.896Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in dcf","timestamp":"2015-12-15T18:44:44.515Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in dcf","timestamp":"2015-12-15T18:54:48.259Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in dcf","timestamp":"2015-12-15T18:56:06.322Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in oops","timestamp":"2015-12-15T18:56:11.455Z"}
