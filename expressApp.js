@@ -28,7 +28,6 @@ app_3000.use(session({
 app_3000.use(express.static(__dirname + "/public"));
 app_3000.set('views', __dirname + "/views");
 app_3000.set('view engine', 'jade');
-
 app_3000.listen(3000, function(){
   console.log("Listening on port 3000");
 });

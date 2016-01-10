@@ -83,6 +83,7 @@ app.get('/zoho/getQueryList', function (req, res){
   res.send(q);
 });
 
+
 app.get('/zoho/testQuery', function (req, res) {
   var query = req.query.q;
 
@@ -102,4 +103,8 @@ app.get('/zoho/testAnswer', function(req, res){
   ans.getID({query: "id of sayan das", usrID: "ra1411003010490"}, function result(err, doc){
     res.render(doc.template, doc);
   });
+});
+
+app.get('/zoho/*', function (req, res){
+	res.redirect('/404/');
 });
