@@ -34,8 +34,9 @@ $(document).ready(function (){
 
 $("#search").keyup(function (e){
   if(e.keyCode == "13"){
+
    $("#card-div").html("<center><div style=\"margin-bottom: 20px;\" class=\"loader-inner ball-grid-pulse\"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div style=\"margin-bottom: 60px;\"></div></center>");
-    
+ 
     $.ajax({
       url: nodeHost + "/query",
       data: { q: $('#search').val() },
