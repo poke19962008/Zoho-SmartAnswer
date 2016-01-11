@@ -1,4 +1,4 @@
-var nodeHost = "http://sayandas.xyz/zoho";
+var nodeHost = "/zoho";
 
 function getCookieValue(cookie, value){
   for (var i = 0; i < cookie.length; i++) {
