@@ -49,7 +49,7 @@ var query = {
 
     failedSubjects: {
       queries: [
-        "((in)? (what|which|(how many)) )?(subjects?|courses?|subs?) ((i (have)?)|(i))? ((failed(ed)?)|(drop(p?ed)?))( ?\?)?$"
+        "((in )?(what|which|(how many)) )?(subjects?|courses?|subs?) ((i (have)?)|(i))? ((failed(ed)?)|(drop(p?ed)?))( in )?( ?\?)?$"
       ],
 
       answer: answers.failedSubjects,
@@ -57,7 +57,7 @@ var query = {
 
     overallPassInOneSubject: {
       queries: [
-        "((how many )|overall |all ?)?( the ?)?students? pass(ed)? (in )?("+subjectRe+")"
+        "((how many )|overall |all ?)?( the ?)?(students?|people) pass(ed)? (in )?("+subjectRe+")"
       ],
 
       answer: answers.overallPassInOneSubject,
@@ -65,7 +65,7 @@ var query = {
 
     overallFailInOneSubject: {
       queries: [
-        "((how many )|overall |all ?)?( the ?)?students? fail(ed)? (in )?("+subjectRe+")"
+        "((how many )|overall |all ?)?( the ?)?(students?|people) fail(ed)? (in )?("+subjectRe+")"
       ],
 
       answer: answers.overallFailInOneSubject,
