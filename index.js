@@ -82,6 +82,17 @@ app.get('/getQueryList', function (req, res){
   res.send(q);
 });
 
+app.get('/zoho/log', function (req, res){
+ var ID = req.session.usrID
+	if(ID == "RA1411003010485"){
+		var log = fs.readFileSync('./log/queriesSearched.log');
+		res.send(log);
+	}else{
+	res.send('Broo!!  U got not no admin rights..');
+	}
+
+});
+
 app.get('/testQuery', function (req, res) {
   var query = req.query.q;
 
