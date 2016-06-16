@@ -61,7 +61,7 @@ while True and connected:
 					student['course'][sCode][tableCol[indexer]] = float(td.get_text())
 			indexer = indexer + 1
 		print "[Success] Scrapped " + student["name"] + " studentID= " + str(studentID)
-
+                exit()
 		db.main.insert(student)
 	except:
 		print "[Error] Cannot scrap studentID: " + str(studentID)

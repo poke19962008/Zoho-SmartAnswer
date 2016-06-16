@@ -331,3 +331,257 @@
 {"level":"info","message":"INV | ID: RA1411003010425  query: how much i scored in language","timestamp":"2016-01-23T14:41:39.114Z"}
 {"level":"info","message":"INV | ID: RA1411003010425  query: my oversll score","timestamp":"2016-01-23T14:41:49.187Z"}
 {"level":"info","message":"VLD | ID: RA1411003010425  query: my overall score","timestamp":"2016-01-23T14:41:52.911Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: how much i scored in ooad","timestamp":"2016-01-23T15:59:56.792Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: ooad marks","timestamp":"2016-01-23T16:00:09.006Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: my ooad marks","timestamp":"2016-01-23T16:00:15.522Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: ooad marks of RA1411003010425","timestamp":"2016-01-23T16:00:48.962Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: how much i scored in ooad","timestamp":"2016-01-23T16:01:24.850Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in ooad","timestamp":"2016-01-23T16:01:35.703Z"}
+{"level":"info","message":"VLD | ID: RA1411003010636  query: overall performance","timestamp":"2016-01-23T16:29:11.396Z"}
+{"level":"info","message":"VLD | ID: RA1411003010636  query: overall performance of ra1411003010625","timestamp":"2016-01-23T16:29:38.342Z"}
+{"level":"info","message":"VLD | ID: RA1411003010636  query: overall performance of ra1411003010633","timestamp":"2016-01-23T16:29:55.273Z"}
+{"level":"info","message":"INV | ID: RA1411003010493  query: RA1411003010496","timestamp":"2016-01-23T16:34:52.688Z"}
+{"level":"info","message":"VLD | ID: RA1411003010493  query: over all performance of RA1411003010496","timestamp":"2016-01-23T16:35:05.708Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: my score in ooad","timestamp":"2016-01-23T17:55:15.714Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010490 in ooad","timestamp":"2016-01-23T17:56:01.579Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010491 in ooad","timestamp":"2016-01-23T17:56:07.608Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010492 in ooad","timestamp":"2016-01-23T17:56:16.796Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010493 in ooad","timestamp":"2016-01-23T17:56:25.017Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010494 in ooad","timestamp":"2016-01-23T17:56:29.514Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010495 in ooad","timestamp":"2016-01-23T17:57:06.502Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010496 in ooad","timestamp":"2016-01-23T17:57:50.383Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of abhijeet","timestamp":"2016-01-23T17:58:01.506Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of jagan","timestamp":"2016-01-23T17:58:07.079Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010625 in ooad","timestamp":"2016-01-23T17:58:16.896Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of bipul","timestamp":"2016-01-23T17:58:31.879Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010533 in ooad","timestamp":"2016-01-23T17:58:47.088Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed on ooad","timestamp":"2016-01-23T17:59:05.985Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall students failed on ooad","timestamp":"2016-01-23T17:59:19.190Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed on ooad","timestamp":"2016-01-23T17:59:28.218Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed on oad","timestamp":"2016-01-23T17:59:31.495Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed on oops","timestamp":"2016-01-23T17:59:35.549Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: students failed on maths","timestamp":"2016-01-23T18:00:01.202Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students passed in maths","timestamp":"2016-01-23T18:02:23.541Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed in maths","timestamp":"2016-01-23T18:02:28.308Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed in ooad","timestamp":"2016-01-23T18:02:31.924Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall performance","timestamp":"2016-01-23T18:08:25.195Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of devansh","timestamp":"2016-01-23T21:11:07.849Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010423","timestamp":"2016-01-23T21:11:17.146Z"}
+{"level":"info","message":"VLD | ID: RA1411003010491  query: Overall performance of RA1411003010493","timestamp":"2016-01-27T07:39:43.911Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: my overall score","timestamp":"2016-01-28T12:01:12.205Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score","timestamp":"2016-01-28T15:35:34.806Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: overalll score","timestamp":"2016-01-28T17:41:48.723Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score","timestamp":"2016-01-28T17:41:51.319Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of shivang","timestamp":"2016-01-28T17:50:20.156Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010710","timestamp":"2016-01-28T17:50:29.452Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall performance of  ra1411003010460","timestamp":"2016-01-29T07:20:18.317Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of zoya","timestamp":"2016-01-29T07:22:18.991Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010589","timestamp":"2016-01-29T07:22:30.709Z"}
+{"level":"info","message":"INV | ID: RA1411003010447  query: whats my rank in cse","timestamp":"2016-01-29T14:38:05.230Z"}
+{"level":"info","message":"INV | ID: RA1411003010447  query: compare with RA1411003010478","timestamp":"2016-01-29T14:40:59.810Z"}
+{"level":"info","message":"VLD | ID: RA1411003010447  query: how much i scored in dcf","timestamp":"2016-01-29T14:41:25.196Z"}
+{"level":"info","message":"INV | ID: RA1411003010447  query: compare with ra1411003010478","timestamp":"2016-01-29T14:41:54.116Z"}
+{"level":"info","message":"INV | ID: RA1411003010193  query: internals in oops","timestamp":"2016-01-30T16:53:20.330Z"}
+{"level":"info","message":"INV | ID: RA1411003010193  query: what is my internals in oops","timestamp":"2016-01-30T16:53:31.949Z"}
+{"level":"info","message":"VLD | ID: RA1411003010193  query: how much i scored in oops","timestamp":"2016-01-30T16:53:47.289Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010447","timestamp":"2016-01-30T17:31:39.813Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of SUSHANT SHEKHAR","timestamp":"2016-01-30T17:33:31.515Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010713","timestamp":"2016-01-30T17:33:41.145Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of koushik","timestamp":"2016-01-30T17:36:34.209Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of grandhi","timestamp":"2016-01-30T17:36:47.583Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of kaushik","timestamp":"2016-01-30T17:36:57.872Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of koushik","timestamp":"2016-01-30T17:37:03.217Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010480","timestamp":"2016-01-30T17:37:17.972Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of tanushka","timestamp":"2016-01-30T17:38:52.077Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010464","timestamp":"2016-01-30T17:39:00.255Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010484","timestamp":"2016-01-30T17:39:36.509Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010482","timestamp":"2016-01-30T17:43:26.370Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of saswat das","timestamp":"2016-02-04T16:45:55.174Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of RA1411003010284","timestamp":"2016-02-04T16:46:10.086Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of pavan","timestamp":"2016-02-05T07:40:56.717Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of pavan","timestamp":"2016-02-05T07:41:40.117Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of pavan","timestamp":"2016-02-05T07:41:40.738Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of pavan","timestamp":"2016-02-05T07:41:50.459Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Overall score of RA1411003010457","timestamp":"2016-02-05T07:44:20.574Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of shivang","timestamp":"2016-02-05T09:57:38.374Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Overall score of RA1411003010710","timestamp":"2016-02-05T09:58:31.384Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Overall score of ra1411003010455","timestamp":"2016-02-05T10:04:44.680Z"}
+{"level":"info","message":"INV | ID: RA1411003010425  query: FUCK YOU SAYAN! :P","timestamp":"2016-02-05T18:23:56.113Z"}
+{"level":"info","message":"INV | ID: RA1411003010458  query: RA1411003010458","timestamp":"2016-02-06T23:32:03.699Z"}
+{"level":"info","message":"INV | ID: RA1411003010458  query: RA1411003010455","timestamp":"2016-02-06T23:32:11.034Z"}
+{"level":"info","message":"INV | ID: RA1411003010458  query: 1411003010455","timestamp":"2016-02-06T23:34:44.448Z"}
+{"level":"info","message":"INV | ID: RA1411003010458  query: RA1411003010455","timestamp":"2016-02-06T23:34:50.059Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Overall score of ra1411003010455","timestamp":"2016-02-08T07:57:11.789Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of achira pal","timestamp":"2016-02-16T15:40:17.057Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010596","timestamp":"2016-02-16T15:40:30.153Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010460","timestamp":"2016-02-16T15:41:13.682Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010425","timestamp":"2016-02-16T15:44:06.895Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010490","timestamp":"2016-02-16T15:44:16.564Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010491","timestamp":"2016-02-16T15:45:01.456Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010485","timestamp":"2016-02-16T15:46:17.827Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010489","timestamp":"2016-02-16T15:47:17.737Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: overall score of RA1411003010488","timestamp":"2016-02-16T15:47:28.993Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of argha","timestamp":"2016-02-21T09:08:19.688Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of Devansh jain","timestamp":"2016-02-21T09:09:28.252Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of argha","timestamp":"2016-02-21T09:17:32.569Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of devansh jain","timestamp":"2016-02-21T09:26:58.958Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of Aman aryan","timestamp":"2016-02-21T09:28:44.456Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of devansh jain","timestamp":"2016-02-21T09:30:19.248Z"}
+{"level":"info","message":"VLD | ID: RA1411003010490  query: ID of devansh jain","timestamp":"2016-02-21T09:40:01.245Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of devansh","timestamp":"2016-02-21T13:39:26.014Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of nithin kumar","timestamp":"2016-02-25T11:58:19.927Z"}
+{"level":"info","message":"INV | ID: RA1411003010425  query: overall performance of nithin kumar","timestamp":"2016-02-25T11:58:32.306Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of nithin","timestamp":"2016-02-25T11:58:53.002Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of saurabh garg","timestamp":"2016-02-25T11:59:00.182Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of Nithin","timestamp":"2016-02-25T11:59:13.305Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of Nitin Kumar","timestamp":"2016-02-25T11:59:21.356Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of Nitin","timestamp":"2016-02-25T11:59:25.614Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of Nithin","timestamp":"2016-02-25T12:01:21.516Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: my overall score","timestamp":"2016-02-25T12:01:35.957Z"}
+{"level":"info","message":"INV | ID: RA1411003010425  query: well, FUCK YOU AGAIN SAYAN! ;)","timestamp":"2016-02-25T12:09:52.337Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: RA1411003010536","timestamp":"2016-02-25T20:42:28.386Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: RA1411003010536","timestamp":"2016-02-25T20:42:31.410Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: ra1411003010536","timestamp":"2016-02-25T20:42:34.261Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: 1411003010536","timestamp":"2016-02-25T20:42:36.798Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: HOw much i scored in oops","timestamp":"2016-02-25T20:42:49.072Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: id of sayan das","timestamp":"2016-02-25T20:43:09.735Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: id of samyak jain","timestamp":"2016-02-25T20:43:21.124Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: compare with samyak jain","timestamp":"2016-02-25T20:43:30.055Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: samyak jain","timestamp":"2016-02-25T20:43:33.599Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: id of samyak jain","timestamp":"2016-02-25T20:43:36.453Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how ra1411003010518 performed in oops","timestamp":"2016-02-25T20:43:56.739Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how ra1411003010543 performed in oops","timestamp":"2016-02-25T20:44:06.192Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: ra1411003010543","timestamp":"2016-02-25T20:44:19.375Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: RA1411003010543","timestamp":"2016-02-25T20:44:33.020Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: ra1411003010543","timestamp":"2016-02-25T20:44:35.624Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: 1411003010543","timestamp":"2016-02-25T20:44:37.075Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: alankrith krishnan","timestamp":"2016-02-25T20:44:43.224Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: id of alankrith krishnan","timestamp":"2016-02-25T20:44:48.976Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010543 scores","timestamp":"2016-02-25T20:45:03.384Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010547 scores","timestamp":"2016-02-25T20:45:49.920Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010498 scores","timestamp":"2016-02-25T20:46:34.179Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010499 scores","timestamp":"2016-02-25T20:46:38.635Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010518 scores","timestamp":"2016-02-25T20:47:35.592Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010543 scores","timestamp":"2016-02-25T20:48:09.814Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010536 scores","timestamp":"2016-02-25T20:48:33.864Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010547 scores","timestamp":"2016-02-25T20:50:11.206Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of manish kumar","timestamp":"2016-02-26T14:26:38.211Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of nithin k","timestamp":"2016-02-26T15:02:54.248Z"}
+{"level":"info","message":"VLD | ID: RA1411003010425  query: id of nithin","timestamp":"2016-02-26T15:02:56.755Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: maths scores","timestamp":"2016-02-26T18:51:27.010Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: mathematics scores","timestamp":"2016-02-26T18:51:34.879Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: scores","timestamp":"2016-02-26T18:51:38.466Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: score","timestamp":"2016-02-26T18:51:42.476Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how mant students failed in maths","timestamp":"2016-02-26T18:51:54.884Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how much i scored in maths","timestamp":"2016-02-26T18:52:38.233Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how much ra1411003010518 scored in maths","timestamp":"2016-02-26T18:53:02.334Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how much scored in maths","timestamp":"2016-02-26T18:53:11.429Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: compare me with ra1411003010518","timestamp":"2016-02-26T18:53:26.101Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: compare me with ra1411003010521","timestamp":"2016-02-26T18:55:29.157Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: compare me with ra1411003010528","timestamp":"2016-02-26T18:56:24.409Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: compare me with ra1411003010499","timestamp":"2016-02-26T18:56:57.892Z"}
+{"level":"info","message":"VLD | ID: RA1411003010444  query: id of akhilesh","timestamp":"2016-02-27T19:06:56.089Z"}
+{"level":"info","message":"INV | ID: RA1411003010784  query: RA1411003010450","timestamp":"2016-02-28T18:36:57.768Z"}
+{"level":"info","message":"INV | ID: RA1411003010784  query: RA1411003010450","timestamp":"2016-02-28T18:37:01.030Z"}
+{"level":"info","message":"INV | ID: RA1411003010784  query: RA1411003010450","timestamp":"2016-02-28T18:37:01.090Z"}
+{"level":"info","message":"INV | ID: RA1411003010784  query: RA1411003010450","timestamp":"2016-02-28T18:37:02.164Z"}
+{"level":"info","message":"VLD | ID: RA1411003010458  query: Id of devansh jain","timestamp":"2016-03-02T09:49:08.361Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: how much i scored in maths","timestamp":"2016-03-03T10:18:18.235Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: id of rishi khosla","timestamp":"2016-03-03T10:18:38.568Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: RA1411003010272 scores","timestamp":"2016-03-03T10:18:50.574Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: how many students failed in maths","timestamp":"2016-03-03T10:19:06.451Z"}
+{"level":"info","message":"INV | ID: RA1411003010545  query: compare with ra1411003010536","timestamp":"2016-03-03T10:19:41.927Z"}
+{"level":"info","message":"INV | ID: RA1411003010545  query: ","timestamp":"2016-03-03T10:19:47.108Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: my overall score","timestamp":"2016-03-03T10:22:44.376Z"}
+{"level":"info","message":"VLD | ID: RA1411003010545  query: how ra1411003010498 performed in dcf","timestamp":"2016-03-03T10:27:35.215Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: Id of shreyas nagare","timestamp":"2016-03-03T12:07:45.914Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: Scores of  ra1411003010536","timestamp":"2016-03-03T12:08:22.288Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: How much i scored in oops micro ooad pd","timestamp":"2016-03-03T12:09:21.850Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: How much i scored in oops micro ooad","timestamp":"2016-03-03T12:09:34.393Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: How much i scored in oops micro ooad","timestamp":"2016-03-03T12:09:35.625Z"}
+{"level":"info","message":"VLD | ID: RA1411003010272  query: How much i scored in oops micro ooad aptitude","timestamp":"2016-03-03T12:10:00.993Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: my scores in aptitude","timestamp":"2016-03-05T16:31:38.352Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: my scores","timestamp":"2016-03-05T16:31:45.417Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: overall performance of ra1411003010599","timestamp":"2016-03-05T16:32:11.987Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: overall performance of ra1411003010499","timestamp":"2016-03-05T16:32:18.827Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: overall performance of ra1511003010554","timestamp":"2016-03-05T16:32:37.942Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: compare me with ra1411003010543","timestamp":"2016-03-05T16:32:51.359Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how many students failed in maths","timestamp":"2016-03-05T16:33:19.875Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how much i scored in micro","timestamp":"2016-03-05T16:34:01.251Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010545","timestamp":"2016-03-05T19:54:04.510Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010272","timestamp":"2016-03-05T19:54:19.706Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010536","timestamp":"2016-03-05T19:54:53.231Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010599","timestamp":"2016-03-05T19:55:11.643Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010543","timestamp":"2016-03-05T19:55:35.147Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of RA1411003010536","timestamp":"2016-03-05T19:56:43.027Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score of ra1411003010599","timestamp":"2016-03-05T19:58:43.490Z"}
+{"level":"info","message":"INV | ID: RA1411003010547  query: rA1411003010791","timestamp":"2016-03-07T13:01:44.618Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of devansh","timestamp":"2016-03-07T13:45:06.116Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: 1031310753","timestamp":"2016-03-08T17:06:36.557Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: scores 1031310753","timestamp":"2016-03-08T17:06:41.440Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: 1031310753 scores","timestamp":"2016-03-08T17:06:48.764Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: 1031310753","timestamp":"2016-03-08T17:06:54.868Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: ra1411003010536","timestamp":"2016-03-08T17:07:00.379Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: ra1411003010536 scores","timestamp":"2016-03-08T17:07:05.325Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: how many students fai;ed in maths","timestamp":"2016-03-08T17:07:39.499Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: how many students failed in maths","timestamp":"2016-03-08T17:07:43.397Z"}
+{"level":"info","message":"VLD | ID: RA1411003010513  query: id of yash dani","timestamp":"2016-03-14T05:48:26.047Z"}
+{"level":"info","message":"VLD | ID: RA1411003010513  query: ra1411003010550 scores","timestamp":"2016-03-14T05:48:45.194Z"}
+{"level":"info","message":"VLD | ID: RA1411003010513  query: id of shreyas nagare","timestamp":"2016-03-14T05:49:09.043Z"}
+{"level":"info","message":"INV | ID: RA1411003010432  query: Saurabh shukla","timestamp":"2016-03-17T10:24:03.526Z"}
+{"level":"info","message":"INV | ID: RA1411003010432  query: RA1411003010491","timestamp":"2016-03-17T10:24:14.054Z"}
+{"level":"info","message":"VLD | ID: RA1411003010432  query: How much did RA1411003010420 scored in dcf","timestamp":"2016-03-17T10:24:50.483Z"}
+{"level":"info","message":"INV | ID: RA1411003010432  query: Overall performance of RA14110030120","timestamp":"2016-03-17T10:25:32.357Z"}
+{"level":"info","message":"INV | ID: RA1411003010432  query: Overall performance of RA141100301020","timestamp":"2016-03-17T10:25:41.369Z"}
+{"level":"info","message":"INV | ID: RA1411003010432  query: Overall performance of RA141100301020?","timestamp":"2016-03-17T10:25:50.576Z"}
+{"level":"info","message":"VLD | ID: RA1411003010432  query: Overall performance of RA1411003010420?","timestamp":"2016-03-17T10:26:03.594Z"}
+{"level":"info","message":"VLD | ID: RA1411003010432  query: Overall performance of RA1411003010420?","timestamp":"2016-03-17T10:26:11.718Z"}
+{"level":"info","message":"VLD | ID: RA1411003010432  query: Overall performance of RA1411003010420","timestamp":"2016-03-17T10:26:13.626Z"}
+{"level":"info","message":"VLD | ID: RA1411003010432  query: Id of ra1411003010485","timestamp":"2016-03-17T10:26:51.580Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of sayan","timestamp":"2016-03-18T20:05:21.158Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of sayan","timestamp":"2016-03-18T20:27:00.120Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of sayan","timestamp":"2016-03-18T20:27:34.516Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of ra1411003010424","timestamp":"2016-03-18T20:28:04.049Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall score of ra1411003010420","timestamp":"2016-03-18T20:28:11.490Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: my scores","timestamp":"2016-03-20T19:32:15.594Z"}
+{"level":"info","message":"INV | ID: RA1411003010536  query: my internals","timestamp":"2016-03-20T19:32:23.404Z"}
+{"level":"info","message":"VLD | ID: RA1411003010536  query: scores of ra1411003010535","timestamp":"2016-03-20T19:32:34.542Z"}
+{"level":"info","message":"INV | ID: RA1411003010458  query: RA1411003010458","timestamp":"2016-03-26T09:05:21.079Z"}
+{"level":"info","message":"INV | ID: RA1411003010165  query: ra1411003010165","timestamp":"2016-04-03T12:38:41.704Z"}
+{"level":"info","message":"INV | ID: RA1411003010165  query: ra1411003010165 marks","timestamp":"2016-04-03T12:38:47.516Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of ra1411003010559","timestamp":"2016-04-07T07:02:35.296Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of ra1411003010558","timestamp":"2016-04-07T07:02:49.707Z"}
+{"level":"info","message":"VLD | ID: RA1411003010252  query: how many students passed in maths","timestamp":"2016-04-07T14:25:16.697Z"}
+{"level":"info","message":"VLD | ID: RA1411003010252  query: how many students passed in electrical","timestamp":"2016-04-07T14:25:55.350Z"}
+{"level":"info","message":"VLD | ID: RA1411003010252  query: how many students passed in electrical,oops,ooad","timestamp":"2016-04-07T14:27:30.237Z"}
+{"level":"info","message":"VLD | ID: RA1411003010252  query: how many students passed in electrical, oops, ooad","timestamp":"2016-04-07T14:27:35.510Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: my overall marks","timestamp":"2016-04-11T08:48:36.204Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: score in dcf","timestamp":"2016-04-11T08:48:48.734Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: my overall score","timestamp":"2016-04-11T08:49:01.269Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: id os ra1411003010585","timestamp":"2016-04-13T08:58:28.894Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of ra1411003010585","timestamp":"2016-04-13T08:58:32.934Z"}
+{"level":"info","message":"INV | ID:  RA1411003010485  query: What are the marks of ra14110030100057 in maths??","timestamp":"2016-04-20T20:47:10.755Z"}
+{"level":"info","message":"VLD | ID: RA1411003010535  query: my overall score","timestamp":"2016-04-25T07:45:23.491Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of ra1411003010485","timestamp":"2016-05-01T15:04:58.715Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of sayan das","timestamp":"2016-05-01T15:05:04.716Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: who is RA1411003010565","timestamp":"2016-05-01T15:05:58.551Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: RA1411003010565","timestamp":"2016-05-01T15:06:04.881Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: overall performance of RA1411003010565","timestamp":"2016-05-01T15:06:16.627Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: how many students passed in maths","timestamp":"2016-05-18T16:08:06.459Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of devansh jain","timestamp":"2016-06-15T15:38:18.429Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: Id of devans","timestamp":"2016-06-15T15:38:35.323Z"}
+{"level":"info","message":"INV | ID: RA1411003010241  query: RA1411003010241","timestamp":"2016-06-16T03:53:50.777Z"}
+{"level":"info","message":"INV | ID: RA1411003010241  query: RA1411003010240","timestamp":"2016-06-16T03:54:01.057Z"}
+{"level":"info","message":"INV | ID: RA1411003010241  query: RA1411003010535","timestamp":"2016-06-16T03:54:09.012Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: Id of Rohith Venkat","timestamp":"2016-06-16T03:54:27.080Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: Id of Kshitij Kumar Agarwal","timestamp":"2016-06-16T03:54:45.409Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: Id of Sayan Das","timestamp":"2016-06-16T03:54:57.450Z"}
+{"level":"info","message":"INV | ID: RA1411003010241  query: my score","timestamp":"2016-06-16T03:55:08.098Z"}
+{"level":"info","message":"INV | ID: RA1411003010241  query: my internals","timestamp":"2016-06-16T03:55:33.594Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: how much i scored in dcf","timestamp":"2016-06-16T03:55:59.193Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: how much i scored in dcf","timestamp":"2016-06-16T04:28:52.149Z"}
+{"level":"info","message":"VLD | ID: RA1411003010241  query: how much i scored in dcf","timestamp":"2016-06-16T04:31:49.808Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed in maths","timestamp":"2016-06-16T18:27:52.840Z"}
+{"level":"info","message":"INV | ID: RA1411003010485  query: Sudo Crawler 2016","timestamp":"2016-06-16T19:19:11.783Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: students failed in maths","timestamp":"2016-06-16T19:19:39.363Z"}
+{"level":"info","message":"VLD | ID: RA1411003010485  query: id of devansh","timestamp":"2016-06-16T19:21:16.021Z"}
